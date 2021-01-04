@@ -20,6 +20,7 @@ add these line (probably in middle or somewhere)
 
 
 > add-highlighter shared/python/code/ regex '[a-zA-Z_0-9]+\(+' 0:function
+
 > add-highlighter shared/python/code/ regex '[(){}\[\]]' 0:brackets
 
 ## see filetypes for more info
