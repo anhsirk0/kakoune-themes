@@ -18,8 +18,8 @@ add this regex for brackects
 # for example (python.kak)
 add these line (probably in middle or somewhere)
 
-# my edits
-add-highlighter shared/python/code/ regex '[a-zA-Z_0-9]+\(+' 0:function
-add-highlighter shared/python/code/ regex '[(){}\[\]]' 0:brackets
+
+> add-highlighter shared/python/code/ regex '[a-zA-Z_0-9]+\(+' 0:function
+> add-highlighter shared/python/code/ regex '[(){}\[\]]' 0:brackets
 
 ## see filetypes for more info
