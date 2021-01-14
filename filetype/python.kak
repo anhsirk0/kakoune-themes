@@ -49,7 +49,10 @@ add-highlighter shared/python/code/ regex '(?i)\b([1-9]\d*|0)l?\b' 0:value
 
 # my edits
 add-highlighter shared/python/code/ regex '[a-zA-Z_0-9]+\(+' 0:function
-add-highlighter shared/python/code/ regex '[(){}\[\]]' 0:brackets
+add-highlighter shared/python/code/ regex '\([a-zA-Z, ._]+\)' 0:arguement
+# add-highlighter shared/python/code/ regex '\([a-zA-Z, .=]+=' 0:arguement
+add-highlighter shared/python/code/ regex '[(){}\[\]]' 0:bracket
+add-highlighter shared/python/code/ regex '[,]' 0:comma
 
 # Float formats
 add-highlighter shared/python/code/ regex '\b\d+[eE][+-]?\d+\b' 0:value
