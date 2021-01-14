@@ -1,21 +1,21 @@
-# Cyanide theme for Kakoune
+# gruvbox theme for Kakoune
 
 # Color palette
 # declare-option str black 'rgb:282C34'
 declare-option str black default
-declare-option str dark 'rgb:191919'
-declare-option str gray 'rgb:5C6370'
-declare-option str white 'rgb:f8f8f2'
-declare-option str blue 'rgb:66D9EF'
-declare-option str cyan 'rgb:8be9fd'
+declare-option str dark 'rgb:1d2021'
+declare-option str gray 'rgb:a89984'
 declare-option str aqua 'rgb:689d6a'
-declare-option str green 'rgb:50fa7b'
+declare-option str white 'rgb:ebdbb2'
+declare-option str blue 'rgb:458588'
+declare-option str cyan 'rgb:8be9fd'
+declare-option str green 'rgb:98971a'
 declare-option str peach 'rgb:E5C07B'
-declare-option str orange 'rgb:FFB86C'
+declare-option str orange 'rgb:d65d0e'
 declare-option str pink 'rgb:F879C6'
-declare-option str purple 'rgb:BD93F9'
-declare-option str red 'rgb:D70000'
-declare-option str yellow 'rgb:F1FA8C'
+declare-option str purple 'rgb:b16286'
+declare-option str red 'rgb:fb4934'
+declare-option str yellow 'rgb:d79921'
 
 declare-option str background %opt{black}
 declare-option str dimmed_background %opt{gray}
@@ -25,20 +25,20 @@ declare-option str foreground %opt{white}
 # https://github.com/mawww/kakoune/blob/master/colors/default.kak
 # For code
 set-face global value "%opt{purple}"
-set-face global type "%opt{cyan}"
+set-face global type "%opt{aqua}"
 set-face global variable "%opt{orange}"
 set-face global module "%opt{white}"
-set-face global function "%opt{green}"
-set-face global string "%opt{yellow}"
-set-face global keyword "%opt{pink}"
+set-face global function "%opt{aqua}"
+set-face global string "%opt{green}"
+set-face global keyword "%opt{red}"
 set-face global operator "%opt{pink}"
 set-face global attribute "%opt{orange}"
 set-face global bracket "%opt{white}+b"
 set-face global arguement "%opt{orange}"
 set-face global comma "%opt{white}"
 set-face global comment "%opt{gray}+i"
-set-face global meta "%opt{pink}"
-set-face global builtin "%opt{cyan}+b"
+set-face global meta "%opt{aqua}"
+set-face global builtin "%opt{aqua}+b"
 
 # For markup
 set-face global title "%opt{pink}"

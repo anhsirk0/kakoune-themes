@@ -1,4 +1,4 @@
-# Cyanide theme for Kakoune
+# Monokai theme for Kakoune
 
 # Color palette
 # declare-option str black 'rgb:282C34'
@@ -6,16 +6,15 @@ declare-option str black default
 declare-option str dark 'rgb:191919'
 declare-option str gray 'rgb:5C6370'
 declare-option str white 'rgb:f8f8f2'
-declare-option str blue 'rgb:66D9EF'
-declare-option str cyan 'rgb:8be9fd'
-declare-option str aqua 'rgb:689d6a'
-declare-option str green 'rgb:50fa7b'
-declare-option str peach 'rgb:E5C07B'
-declare-option str orange 'rgb:FFB86C'
-declare-option str pink 'rgb:F879C6'
-declare-option str purple 'rgb:BD93F9'
-declare-option str red 'rgb:D70000'
-declare-option str yellow 'rgb:F1FA8C'
+declare-option str blue 'rgb:66d9ef'
+declare-option str cyan 'rgb:a1efe4'
+declare-option str green 'rgb:a6e22e'
+declare-option str magenta 'rgb:fd5ff0'
+declare-option str orange 'rgb:fd971f'
+declare-option str pink 'rgb:F92672'
+declare-option str purple 'rgb:ae81ff'
+declare-option str red 'rgb:f92672'
+declare-option str yellow 'rgb:e6db74'
 
 declare-option str background %opt{black}
 declare-option str dimmed_background %opt{gray}
@@ -30,15 +29,15 @@ set-face global variable "%opt{orange}"
 set-face global module "%opt{white}"
 set-face global function "%opt{green}"
 set-face global string "%opt{yellow}"
-set-face global keyword "%opt{pink}"
+set-face global keyword "%opt{red}"
 set-face global operator "%opt{pink}"
 set-face global attribute "%opt{orange}"
 set-face global bracket "%opt{white}+b"
 set-face global arguement "%opt{orange}"
 set-face global comma "%opt{white}"
 set-face global comment "%opt{gray}+i"
-set-face global meta "%opt{pink}"
-set-face global builtin "%opt{cyan}+b"
+set-face global meta "%opt{red}"
+set-face global builtin "%opt{blue}+b"
 
 # For markup
 set-face global title "%opt{pink}"
