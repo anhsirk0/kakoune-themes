@@ -41,7 +41,7 @@ map global insert <c-right>   '<a-;>w<a-;>;'
 map global insert <c-s-right>    '<a-;><s-e><a-;>i'
 map global insert <c-up>      '<a-;>[p<a-;>;'
 map global insert <c-down>    '<a-;>]p<a-;>;'
-map global insert <a-x>    '<a-;>b<a-;>d'
+map global insert <a-x>    '<left><a-;>b<a-;>d'
 map global insert <a-c>    '<a-;>e<a-;>d'
 map global normal <c-left>    'b;'
 map global normal <c-right>   'w;'
@@ -51,13 +51,21 @@ map global normal <c-down>    ']p;'
 # <c-s> - Save file
 map global normal <c-s> ': w<ret>'
 map global insert <c-s> '<a-;>: w<ret>'
-map global  user  <c-s> '<c-s>'# <c-s> - Save file
+map global  user  <c-s> '<c-s>'
 
 # <c-q> - Quit kakoune
 map global normal <c-q> ': q<ret>'
 map global insert <c-q> '<esc>'
 # <#> Comments lines
 map global normal '#' ': comment-line<ret>'
+
+# <c-k> to delete a line
+map global insert <c-k> '<a-;>x<a-;>d<left>'
+
+# <c-d> to duplicate a line
+map global insert <c-d> '<a-;>x<a-;>y<a-;>p<down>'
+map global insert <a-right> '<a-;>gl<right>'
+map global insert <a-left> '<a-;>gh'
 
 define-command -hidden -docstring \
 "select a word under cursor, or add cursor on next occurrence of current selection" \
@@ -182,7 +190,8 @@ define-command -hidden surround-del %{
 define-command -hidden surround-move -params 2 %{
     exec "%arg{1}<a-;>%arg{2}<a-;>"
 }
-map-sequence global bb surround
+
+# map-sequence global bb surround
 
 set-option global modelinefmt '%val{bufname} %val{cursor_line}:%val{cursor_char_column} {{context_info}} {{mode_info}}'
 
