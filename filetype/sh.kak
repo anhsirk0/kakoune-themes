@@ -60,10 +60,10 @@ add-highlighter shared/sh/code/variable regex ((?<![-:])\b\w+)= 1:variable
 add-highlighter shared/sh/code/alias regex \balias(\h+[-+]\w)*\h+([\w-.]+)= 2:variable
 add-highlighter shared/sh/code/function regex ^\h*(\S+)\h*\(\) 1:function
 
-add-highlighter shared/sh/code/unscoped_expansion regex \$(\w+|#|@|\?|\$|!|-|\*) 0:value
-add-highlighter shared/sh/double_string/expansion regex \$(\w+|\{.+?\}) 0:value
+add-highlighter shared/sh/code/unscoped_expansion regex \$(\w+|#|@|\?|\$|!|-|\*) 0:arguement
+add-highlighter shared/sh/double_string/expansion regex \$(\w+|\{.+?\}) 0:arguement
 # brackets
-add-highlighter shared/sh/code/ regex '[(){}\[\]]' 0:brackets
+add-highlighter shared/sh/code/ regex '[(){}\[\]]' 0:bracket
 # ‾‾‾‾‾‾‾‾
 
 define-command -hidden sh-trim-indent %{

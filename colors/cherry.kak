@@ -3,19 +3,20 @@
 # Color palette
 # declare-option str black 'rgb:282C34'
 declare-option str black default
-declare-option str dark 'rgb:191919'
-declare-option str gray 'rgb:5C6370'
-declare-option str white 'rgb:f8f8f2'
-declare-option str blue 'rgb:66D9EF'
-declare-option str cyan 'rgb:8be9fd'
-declare-option str aqua 'rgb:689d6a'
-declare-option str green 'rgb:50fa7b'
-declare-option str peach 'rgb:E5C07B'
-declare-option str orange 'rgb:FFB86C'
-declare-option str pink 'rgb:F879C6'
-declare-option str purple 'rgb:BD93F9'
-declare-option str red 'rgb:D70000'
-declare-option str yellow 'rgb:F1FA8C'
+declare-option str gray 'rgb:808080'
+declare-option str dark 'rgb:454545'
+declare-option str white 'rgb:c0c0c0'
+declare-option str aqua 'rgb:62c6da'
+declare-option str cyan 'rgb:50cacd'
+declare-option str blue 'rgb:73a9ff'
+declare-option str green 'rgb:64de83'
+declare-option str amber 'rgb:a69460'
+declare-option str orange 'rgb:ffa65e'
+declare-option str pink 'rgb:ff568e'
+declare-option str purple 'rgb:946ff7'
+declare-option str red 'rgb:efa6a2'
+declare-option str yellow 'rgb:efff73'
+declare-option str azure 'rgb:74c3e4'
 
 declare-option str background %opt{black}
 declare-option str dimmed_background %opt{gray}
@@ -24,23 +25,25 @@ declare-option str foreground %opt{white}
 # Reference
 # https://github.com/mawww/kakoune/blob/master/colors/default.kak
 # For code
-set-face global value "%opt{purple}"
+set-face global value "%opt{pink}"
 set-face global type "%opt{cyan}"
-set-face global variable "%opt{orange}"
+set-face global variable "%opt{pink}"
 set-face global module "%opt{white}"
-set-face global function "%opt{green}"
-set-face global string "%opt{yellow}"
-set-face global keyword "%opt{pink}"
-set-face global operator "%opt{pink}"
-set-face global attribute "%opt{blue}"
+set-face global function "%opt{blue}"
+set-face global string "%opt{green}"
+set-face global keyword "%opt{purple}"
+set-face global operator "%opt{aqua}"
+set-face global attribute "%opt{aqua}"
 set-face global bracket "%opt{white}+b"
 set-face global arguement "%opt{orange}"
 set-face global comma "%opt{white}"
 set-face global comment "%opt{gray}+i"
 set-face global docstring "%opt{gray}+i"
-set-face global meta "%opt{pink}"
+set-face global meta "%opt{purple}"
 set-face global builtin "%opt{cyan}"
-set-face global class "%opt{cyan}+b"
+set-face global class "%opt{yellow}"
+set-face global self "%opt{yellow}"
+set-face global constant "%opt{orange}"
 
 # For markup
 set-face global title "%opt{pink}"
@@ -57,15 +60,15 @@ set-face global list "%opt{white}"
 # set-face global Default "%opt{white},%opt{black}"
 set-face global Default default,default
 set-face global PrimarySelection "%opt{dark},%opt{purple}"
-set-face global SecondarySelection "%opt{black},%opt{purple}"
+set-face global SecondarySelection "%opt{dark},%opt{purple}"
 set-face global PrimaryCursor "%opt{dark},%opt{purple}"
 set-face global SecondaryCursor "%opt{black},%opt{orange}"
 set-face global PrimaryCursorEol "%opt{black},%opt{cyan}"
-set-face global SecondaryCursorEol "%opt{black},%opt{orange}"
+set-face global SecondaryCursorEol "%opt{orange},%opt{black}"
 set-face global LineNumbers "%opt{gray},%opt{black}"
-set-face global LineNumberCursor "%opt{purple},%opt{black}+b"
+set-face global LineNumberCursor "%opt{pink},%opt{black}+b"
 set-face global LineNumbersWrapped "%opt{gray},%opt{black}+i"
-set-face global MenuForeground "%opt{dark},%opt{white}+b"
+set-face global MenuForeground "%opt{dark},%opt{aqua}+b"
 set-face global MenuBackground "%opt{white},%opt{dark}"
 set-face global MenuInfo "%opt{dark},%opt{orange}"
 set-face global Information "%opt{yellow},%opt{gray}"

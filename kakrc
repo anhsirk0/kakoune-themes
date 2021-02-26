@@ -1,5 +1,5 @@
-colorscheme cyanide
-add-highlighter global/ number-lines
+colorscheme nord
+add-highlighter global/ number-lines -hlcursor
 # add-highlighter global/ show-whitespaces
 # xsel system --clipboard 
 hook global RegisterModified '"' %{ nop %sh{
@@ -23,7 +23,6 @@ define-command -override -hidden home-expansion %{
         }
     }
 }
-map global insert <c-b>    '<a-;>:surround<ret>'
 map global insert <tab> '<a-;><gt>'
 map global insert <s-tab> '<a-;><lt>'
 set-option global indentwidth 4
@@ -41,8 +40,8 @@ map global insert <c-right>   '<a-;>w<a-;>;'
 map global insert <c-s-right>    '<a-;><s-e><a-;>i'
 map global insert <c-up>      '<a-;>[p<a-;>;'
 map global insert <c-down>    '<a-;>]p<a-;>;'
-map global insert <a-x>    '<left><a-;>b<a-;>d'
-map global insert <a-c>    '<a-;>e<a-;>d'
+map global insert <a-backspace>    '<left><a-;>b<a-;>d'
+map global insert <a-del>    '<a-;>e<a-;>d'
 map global normal <c-left>    'b;'
 map global normal <c-right>   'w;'
 map global normal <c-up>      '[p;'
@@ -60,12 +59,32 @@ map global insert <c-q> '<esc>'
 map global normal '#' ': comment-line<ret>'
 
 # <c-k> to delete a line
-map global insert <c-k> '<a-;>x<a-;>d<left>'
+map global insert <c-k> '<a-;>x<a-;>d<left><down>'
 
 # <c-d> to duplicate a line
 map global insert <c-d> '<a-;>x<a-;>y<a-;>p<down>'
+
+# go to begining and end of a line in insert mode
 map global insert <a-right> '<a-;>gl<right>'
 map global insert <a-left> '<a-;>gh'
+
+# move lines 
+map global insert <a-down> '<esc><up>xdgl<right>pi<down><a-right>'
+map global insert <a-up> '<up><esc><esc><up>xdgl<right>pi'
+
+# new line
+map global insert <c-n> '<a-;>o'
+
+# auto add brackets and inverted commas
+map global insert '(' '()<left>'
+map global insert '[' '[]<left>'
+map global insert '{' '{}<left>'
+
+map global insert "'" "''<left>"
+map global insert '"' '""<left>'
+
+# comment-line in insert mode
+map global insert <a-m> '<a-;>: comment-line <ret>'
 
 define-command -hidden -docstring \
 "select a word under cursor, or add cursor on next occurrence of current selection" \

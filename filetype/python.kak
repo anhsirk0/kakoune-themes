@@ -41,18 +41,17 @@ add-highlighter shared/python/single_string region "'"   (?<!\\)(\\\\)*'  fill s
 add-highlighter shared/python/documentation region '##'  '$'              fill documentation
 add-highlighter shared/python/comment       region '#'   '$'              fill comment
 
+# my edits
+add-highlighter shared/python/code/ regex '[a-zA-Z_0-9]+\(+' 0:function
+add-highlighter shared/python/code/ regex '[A-Z][a-zA-Z_0-9]+' 0:class
+
+
 # Integer formats
 add-highlighter shared/python/code/ regex '(?i)\b0b[01]+l?\b' 0:value
 add-highlighter shared/python/code/ regex '(?i)\b0x[\da-f]+l?\b' 0:value
 add-highlighter shared/python/code/ regex '(?i)\b0o?[0-7]+l?\b' 0:value
 add-highlighter shared/python/code/ regex '(?i)\b([1-9]\d*|0)l?\b' 0:value
 
-# my edits
-add-highlighter shared/python/code/ regex '[a-zA-Z_0-9]+\(+' 0:function
-add-highlighter shared/python/code/ regex '\([a-zA-Z, ._]+\)' 0:arguement
-# add-highlighter shared/python/code/ regex '\([a-zA-Z, .=]+=' 0:arguement
-add-highlighter shared/python/code/ regex '[(){}\[\]]' 0:bracket
-add-highlighter shared/python/code/ regex '[,]' 0:comma
 
 # Float formats
 add-highlighter shared/python/code/ regex '\b\d+[eE][+-]?\d+\b' 0:value
@@ -135,7 +134,7 @@ evaluate-commands %sh{
         add-highlighter shared/python/code/ regex '\b($(join "${values}" '|'))\b' 0:value
         add-highlighter shared/python/code/ regex '\b($(join "${meta}" '|'))\b' 0:meta
         add-highlighter shared/python/code/ regex '\b($(join "${attributes}" '|'))\b' 0:attribute
-        add-highlighter shared/python/code/ regex '\bdef\s+($(join "${methods}" '|'))\b' 1:function
+        add-highlighter shared/python/code/ regex '\bdef\s+($(join "${methods}" '|'))\b' 1:builtin
         add-highlighter shared/python/code/ regex '\b($(join "${exceptions}" '|'))\b' 0:function
         add-highlighter shared/python/code/ regex '\b($(join "${keywords}" '|'))\b' 0:keyword
         add-highlighter shared/python/code/ regex '\b($(join "${functions}" '|'))\b\(' 1:builtin
@@ -144,10 +143,20 @@ evaluate-commands %sh{
     "
 }
 
-add-highlighter shared/python/code/ regex (?<=[\w\s\d\)\]'"_])(<=|<<|>>|>=|<>?|>|!=|==|\||\^|&|\+|-|\*\*?|//?|%|~) 0:operator
 add-highlighter shared/python/code/ regex (?<=[\w\s\d'"_])((?<![=<>!]):?=(?![=])|[+*-]=) 0:builtin
+add-highlighter shared/python/code/ regex (?<=[\w\s\d\)\]'"_])(<=|<<|>>|>=|<>?|>|!=|==|\||\^|&|\+|-|\*\*?|//?|%|~) 0:operator
 add-highlighter shared/python/code/ regex ^\h*(?:from|import)\h+(\S+) 1:module
 
+# my edits
+add-highlighter shared/python/code/ regex '\([a-zA-Z, ._]+\)' 0:arguement
+# add-highlighter shared/python/code/ regex '\([a-zA-Z, .=]+=' 0:arguement
+# add-highlighter shared/python/code/ regex '[A-Z_0-9]*' 0:constant
+add-highlighter shared/python/code/ regex '__[a-zA-Z_0-9]+__' 1:builtin
+add-highlighter shared/python/code/ regex '>=' 0:operator
+add-highlighter shared/python/code/ regex '[(){}\[\]]' 0:bracket
+add-highlighter shared/python/code/ regex '[,]' 0:comma
+add-highlighter shared/python/code/ regex '[s][e][l][f]' 0:self
+# my edits ends
 
 # Commands
 # ‾‾‾‾‾‾‾‾

@@ -1,6 +1,8 @@
 # kakoune
 custom config , syntax-highlighting , color schemes for kakoune
 
+![Cyanide color scheme ](https://github.com/anhsirk0/kakoune/cyanide.png)
+
 ## usage
 add colors , kakrc to ~/.config/kak/
 
@@ -13,14 +15,13 @@ add this regex for functions
 > '[a-zA-Z_0-9]+\(+' 0:function
 
 add this regex for brackects
-> '[a-zA-Z_0-9]+\(+' 0:function
+> '[(){}\[\]]' 0:bracket
 
 # for example (python.kak)
 add these line (probably in middle or somewhere)
 
-
 > add-highlighter shared/python/code/ regex '[a-zA-Z_0-9]+\(+' 0:function
 
-> add-highlighter shared/python/code/ regex '[(){}\[\]]' 0:brackets
+> add-highlighter shared/python/code/ regex '[(){}\[\]]' 0:bracket
 
 ## see filetypes for more info
