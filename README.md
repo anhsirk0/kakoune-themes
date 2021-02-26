@@ -1,10 +1,19 @@
 # kakoune
 custom config , syntax-highlighting , color schemes for kakoune
 
+## Cyanide color scheme
 ![Cyanide color scheme ](https://github.com/anhsirk0/kakoune/blob/main/cyanide.png)
+
+## Cherry color scheme
 ![Cherry color scheme ](https://github.com/anhsirk0/kakoune/blob/main/cherry.png)
+
+## Undoo color scheme
 ![Undoo color scheme ](https://github.com/anhsirk0/kakoune/blob/main/undoo.png)
+
+## Monokai color scheme
 ![Monokai color scheme ](https://github.com/anhsirk0/kakoune/blob/main/monokai.png)
+
+## Nord color scheme
 ![Nord color scheme ](https://github.com/anhsirk0/kakoune/blob/main/nord.png)
 
 ## usage
