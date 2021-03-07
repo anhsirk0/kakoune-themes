@@ -1,20 +1,20 @@
-# Monokai theme for Kakoune
+# One dark theme for Kakoune
 
 # Color palette
 # declare-option str black 'rgb:282C34'
 declare-option str black default
-declare-option str dark 'rgb:191919'
 declare-option str gray 'rgb:5C6370'
 declare-option str white 'rgb:f8f8f2'
-declare-option str blue 'rgb:66d9ef'
-declare-option str cyan 'rgb:a1efe4'
-declare-option str green 'rgb:a6e22e'
-declare-option str magenta 'rgb:fd5ff0'
-declare-option str orange 'rgb:fd971f'
-declare-option str pink 'rgb:F92672'
-declare-option str purple 'rgb:ae81ff'
-declare-option str red 'rgb:f92672'
-declare-option str yellow 'rgb:e6db74'
+declare-option str blue 'rgb:61AFEF'
+declare-option str cyan 'rgb:8be9fd'
+declare-option str teal 'rgb:00AAAA'
+declare-option str green 'rgb:98C379'
+declare-option str peach 'rgb:E5C07B'
+declare-option str orange 'rgb:E5C07B'
+declare-option str pink 'rgb:F879C6'
+declare-option str purple 'rgb:C678DD'
+declare-option str red 'rgb:D70000'
+declare-option str yellow 'rgb:FFAF00'
 
 declare-option str background %opt{black}
 declare-option str dimmed_background %opt{gray}
@@ -29,16 +29,13 @@ set-face global variable "%opt{orange}"
 set-face global module "%opt{white}"
 set-face global function "%opt{green}"
 set-face global string "%opt{yellow}"
-set-face global keyword "%opt{red}"
+set-face global keyword "%opt{pink}"
 set-face global operator "%opt{pink}"
 set-face global attribute "%opt{orange}"
-set-face global bracket "%opt{white}+b"
-set-face global arguement "%opt{orange}"
-set-face global comma "%opt{white}"
+set-face global brackets "%opt{orange}"
 set-face global comment "%opt{gray}+i"
-set-face global meta "%opt{red}"
-set-face global builtin "%opt{blue}"
-set-face global class "%opt{cyan}+b"
+set-face global meta "%opt{pink}"
+set-face global builtin "%opt{cyan}+b"
 
 # For markup
 set-face global title "%opt{pink}"
@@ -52,24 +49,23 @@ set-face global bullet "%opt{green}"
 set-face global list "%opt{white}"
 
 # Builtin faces
-# set-face global Default "%opt{white},%opt{black}"
-set-face global Default default,default
-set-face global PrimarySelection "%opt{dark},%opt{purple}"
+set-face global Default "%opt{white},%opt{black}"
+set-face global PrimarySelection "%opt{black},%opt{pink}"
 set-face global SecondarySelection "%opt{black},%opt{purple}"
-set-face global PrimaryCursor "%opt{dark},%opt{purple}"
+set-face global PrimaryCursor "%opt{black},%opt{cyan}"
 set-face global SecondaryCursor "%opt{black},%opt{orange}"
 set-face global PrimaryCursorEol "%opt{black},%opt{cyan}"
 set-face global SecondaryCursorEol "%opt{black},%opt{orange}"
 set-face global LineNumbers "%opt{gray},%opt{black}"
 set-face global LineNumberCursor "%opt{white},%opt{gray}+b"
 set-face global LineNumbersWrapped "%opt{gray},%opt{black}+i"
-set-face global MenuForeground "%opt{dark},%opt{white}+b"
-set-face global MenuBackground "%opt{white},%opt{dark}"
-set-face global MenuInfo "%opt{dark},%opt{orange}"
+set-face global MenuForeground "%opt{teal},%opt{white}+b"
+set-face global MenuBackground "%opt{white},%opt{teal}"
+set-face global MenuInfo "%opt{cyan},%opt{blue}"
 set-face global Information "%opt{yellow},%opt{gray}"
 set-face global Error "%opt{red},%opt{black}"
-set-face global StatusLine "%opt{white},%opt{dark}"
-set-face global StatusLineMode "%opt{green},%opt{black}"
+set-face global StatusLine "%opt{white},%opt{black}"
+set-face global StatusLineMode "%opt{black},%opt{green}"
 set-face global StatusLineInfo "%opt{purple},%opt{black}"
 set-face global StatusLineValue "%opt{orange},%opt{black}"
 set-face global StatusCursor "%opt{white},%opt{blue}"
