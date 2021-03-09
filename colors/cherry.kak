@@ -41,8 +41,8 @@ set-face global comment "%opt{gray}+i"
 set-face global docstring "%opt{gray}+i"
 set-face global meta "%opt{purple}"
 set-face global builtin "%opt{cyan}"
-set-face global class "%opt{yellow}+b"
-set-face global self "%opt{yellow}"
+set-face global class "%opt{yellow}"
+# set-face global self "%opt{yellow}"
 set-face global constant "%opt{orange}"
 
 # For markup
