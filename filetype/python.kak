@@ -43,7 +43,7 @@ add-highlighter shared/python/comment       region '#'   '$'              fill c
 
 # my edits
 add-highlighter shared/python/code/ regex '[a-zA-Z_0-9]+\(+' 0:function
-add-highlighter shared/python/code/ regex '[A-Z][a-zA-Z_0-9]+' 0:class
+add-highlighter shared/python/code/ regex '[^a-z][A-Z][a-zA-Z_0-9]+' 0:class
 
 
 # Integer formats
