@@ -1,4 +1,4 @@
-# Cyanide theme for Kakoune
+# cherry theme for Kakoune
 
 # Color palette
 # declare-option str black 'rgb:282C34'
