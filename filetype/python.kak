@@ -42,6 +42,7 @@ add-highlighter shared/python/documentation region '##'  '$'              fill d
 add-highlighter shared/python/comment       region '#'   '$'              fill comment
 
 # my edits
+add-highlighter shared/python/code/ regex '[A-Z]+[^a-z]+' 0:constant
 add-highlighter shared/python/code/ regex '[a-zA-Z_0-9]+\(+' 0:function
 add-highlighter shared/python/code/ regex '[^a-z][A-Z][a-zA-Z_0-9]+' 0:class
 
@@ -148,14 +149,13 @@ add-highlighter shared/python/code/ regex (?<=[\w\s\d\)\]'"_])(<=|<<|>>|>=|<>?|>
 add-highlighter shared/python/code/ regex ^\h*(?:from|import)\h+(\S+) 1:module
 
 # my edits
+add-highlighter shared/python/code/ regex '[s][e][l][f]' 0:self
 add-highlighter shared/python/code/ regex '\([a-zA-Z, ._]+\)' 0:arguement
 # add-highlighter shared/python/code/ regex '\([a-zA-Z, .=]+=' 0:arguement
-# add-highlighter shared/python/code/ regex '[A-Z_0-9]*' 0:constant
 add-highlighter shared/python/code/ regex '__[a-zA-Z_0-9]+__' 1:builtin
 add-highlighter shared/python/code/ regex '>=' 0:operator
 add-highlighter shared/python/code/ regex '[(){}\[\]]' 0:bracket
 add-highlighter shared/python/code/ regex '[,]' 0:comma
-add-highlighter shared/python/code/ regex '[s][e][l][f]' 0:self
 # my edits ends
 
 # Commands
