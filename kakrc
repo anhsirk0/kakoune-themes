@@ -7,7 +7,6 @@ hook global RegisterModified '"' %{ nop %sh{
 }}
 
 map global normal p '<a-!>xsel --output --clipboard<ret>'
-map global insert <c-c> '<a-;><a-!>xsel --output --clipboard<ret>'
 
 # Movement
 # ––––––––––––––––––––––––––––––––––––––
@@ -16,8 +15,6 @@ map global insert <tab> '<a-;><gt>'
 map global insert <s-tab> '<a-;><lt>'
 set-option global indentwidth 4
 # If you want to implement the following section, use this instead:
-map global normal <home>      ': home-expansion<ret>;'
-map global normal <s-home>    ': home-expansion<ret>'
 
 # Ctrl for moving objects in insert mode
 map global insert <c-left>    '<a-;>b<a-;>;'
@@ -44,8 +41,6 @@ map global insert <c-k> '<a-;>x<a-;>d<left><down>'
 
 # <c-x> to cut
 map global insert <c-x> '<a-;>d'
-# <c-c> to copy
-map global insert <c-c> '<esc>yi'
 # <c-v> to paste
 map global insert <c-v> '<esc>pi'
 
@@ -86,7 +81,7 @@ map global insert "'" "''<left>"
 map global insert '"' '""<left>'
 
 # comment-line in insert mode
-map global insert <a-m> '<a-;>: comment-line <ret>'
+map global insert '' '<a-;>: comment-line <ret>'
 
 define-command -hidden -docstring \
 "select a word under cursor, or add cursor on next occurrence of current selection" \
