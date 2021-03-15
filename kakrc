@@ -1,43 +1,29 @@
-colorscheme nord
-add-highlighter global/ number-lines
-add-highlighter global/ show-whitespaces
+colorscheme mygruvbox
+add-highlighter global/ number-lines -relative -hlcursor
+# add-highlighter global/ show-whitespaces
 # xsel system --clipboard 
 hook global RegisterModified '"' %{ nop %sh{
   printf %s "$kak_main_reg_dquote" | xsel --input --clipboard
 }}
 
 map global normal p '<a-!>xsel --output --clipboard<ret>'
+map global insert <c-c> '<a-;><a-!>xsel --output --clipboard<ret>'
 
 # Movement
 # ––––––––––––––––––––––––––––––––––––––
-# Home moves/expand to the begining of line/non blank depending on position
-define-command -override -hidden home-expansion %{
-    # Run each selection independently so that the
-    # test does not just remove failing selections.
-    eval -itersel %{ 
-        try %{
-            exec -draft %{ <a-h><a-k>\A\h+.\z<ret> } # check that the preceeding characters are horizontal whitespaces
-            exec Gh # if the previous line does not fail, go to begining of line
-        } catch %{
-            exec Gi # if it failed, go to first non blank character
-        }
-    }
-}
+
 map global insert <tab> '<a-;><gt>'
 map global insert <s-tab> '<a-;><lt>'
 set-option global indentwidth 4
-map global insert <home>      '<esc>: home-expansion<ret>;i'
 # If you want to implement the following section, use this instead:
-# map global insert <s-home>    '<esc>: home-expansion<ret>: enter-user-mode fixsel'
-map global insert <s-home>    '<esc>: home-expansion<ret>i'
 map global normal <home>      ': home-expansion<ret>;'
 map global normal <s-home>    ': home-expansion<ret>'
 
 # Ctrl for moving objects in insert mode
 map global insert <c-left>    '<a-;>b<a-;>;'
-map global insert <c-s-left>    '<a-;><s-b><a-;>i'
+map global insert <c-s-left>    '<a-;><s-b>'
 map global insert <c-right>   '<a-;>w<a-;>;'
-map global insert <c-s-right>    '<a-;><s-e><a-;>i'
+map global insert <c-s-right>    '<a-;><s-e>'
 map global insert <c-up>      '<a-;>[p<a-;>;'
 map global insert <c-down>    '<a-;>]p<a-;>;'
 map global insert <a-backspace>    '<left><a-;>b<a-;>d'
@@ -59,18 +45,20 @@ map global insert <c-k> '<a-;>x<a-;>d<left><down>'
 # <c-x> to cut
 map global insert <c-x> '<a-;>d'
 # <c-c> to copy
-map global insert <c-c> '<a-;>y'
+map global insert <c-c> '<esc>yi'
 # <c-v> to paste
-map global insert <c-v> '<a-;>p'
+map global insert <c-v> '<esc>pi'
 
 # <c-q> - Quit kakoune
 map global normal <c-q> ': q<ret>'
-map global insert <c-q> '<esc>'
+map global insert <c-q> '<esc><esc>'
 # <#> Comments lines
 map global normal '#' ': comment-line<ret>'
 
 # <c-d> to duplicate a line
 map global insert <c-d> '<a-;>x<a-;>y<a-;>p<down>'
+# <a-s> select line
+map global insert <a-s> '<a-;>xi'
 
 # go to begining and end of a line in insert mode
 map global insert <a-right> '<a-;>gl<right>'
@@ -80,11 +68,14 @@ map global insert <a-left> '<a-;>gh'
 map global insert <a-v> '<a-;>vv'
  
 # move lines 
-map global insert <a-down> '<esc><up>xdgl<right>pi<down><a-right>'
-map global insert <a-up> '<up><esc><up>xdgl<right>pi'
+map global insert <a-down> '<esc><esc>xdjPki'
+map global insert <a-up> '<esc><esc>xdkPki'
 
 # new line
 map global insert <c-n> '<a-;>o'
+
+# goto a word
+map global insert <a-g> '<esc>/'
 
 # auto add brackets and inverted commas
 map global insert '(' '()<left>'
@@ -199,3 +190,4 @@ define-command \
         }
     }
 }
+

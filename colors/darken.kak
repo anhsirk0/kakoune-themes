@@ -6,17 +6,27 @@ declare-option str black default
 declare-option str gray 'rgb:808080'
 declare-option str dark 'rgb:454545'
 declare-option str white 'rgb:c0c0c0'
-declare-option str aqua 'rgb:62c6da'
-declare-option str cyan 'rgb:50cacd'
-declare-option str blue 'rgb:73a9ff'
-declare-option str green 'rgb:64de83'
-declare-option str amber 'rgb:a69460'
-declare-option str orange 'rgb:ffa65e'
-declare-option str pink 'rgb:ff568e'
-declare-option str purple 'rgb:946ff7'
-declare-option str red 'rgb:efa6a2'
-declare-option str yellow 'rgb:efff73'
-declare-option str azure 'rgb:74c3e4'
+
+
+declare-option str red "rgb:b71c1c"
+declare-option str pink "rgb:880e4f"
+declare-option str purple "rgb:4a148c"
+declare-option str deep_purple "rgb:311b92"
+declare-option str indigo "rgb:1a237e"
+declare-option str blue "rgb:0d47a1"
+declare-option str light_blue "rgb:01579b"
+declare-option str cyan "rgb:006064"
+declare-option str teal "rgb:004d40"
+declare-option str green "rgb:1b5e20"
+declare-option str light_green "rgb:33691e"
+declare-option str lime "rgb:827717"
+declare-option str yellow "rgb:f57f17"
+declare-option str amber "rgb:ff6f00"
+declare-option str orange "rgb:e65100"
+declare-option str deep_orange "rgb:bf360c"
+declare-option str brown "rgb:3e2723"
+declare-option str grey "rgb:212121"
+declare-option str blue_grey "rgb:263238"
 
 declare-option str background %opt{black}
 declare-option str dimmed_background %opt{gray}
@@ -30,8 +40,8 @@ set-face global type "%opt{cyan}"
 set-face global variable "%opt{orange}"
 set-face global module "%opt{white}"
 set-face global function "%opt{blue}"
-set-face global string "%opt{green}"
-set-face global keyword "%opt{purple}"
+set-face global string "%opt{light_green}"
+set-face global keyword "%opt{lime}"
 set-face global operator "%opt{aqua}"
 set-face global attribute "%opt{blue}"
 set-face global bracket "%opt{white}+b"
@@ -39,11 +49,11 @@ set-face global arguement "%opt{pink}"
 set-face global comma "%opt{white}"
 set-face global comment "%opt{gray}+i"
 set-face global docstring "%opt{gray}+i"
-set-face global meta "%opt{purple}"
-set-face global builtin "%opt{cyan}"
-set-face global constant "%opt{yellow}+b"
+set-face global meta "%opt{lime}"
+set-face global builtin "%opt{light_blue}"
 set-face global class "%opt{yellow}"
-#set-face global self "%opt{orange}"
+# set-face global self "%opt{yellow}"
+set-face global constant "%opt{orange}"
 
 # For markup
 set-face global title "%opt{pink}"
@@ -66,7 +76,7 @@ set-face global SecondaryCursor "%opt{black},%opt{orange}"
 set-face global PrimaryCursorEol "%opt{black},%opt{cyan}"
 set-face global SecondaryCursorEol "%opt{orange},%opt{black}"
 set-face global LineNumbers "%opt{gray},%opt{black}"
-set-face global LineNumberCursor "%opt{pink},%opt{black}+b"
+set-face global LineNumberCursor "%opt{blue},%opt{black}+b"
 set-face global LineNumbersWrapped "%opt{gray},%opt{black}+i"
 set-face global MenuForeground "%opt{dark},%opt{aqua}+b"
 set-face global MenuBackground "%opt{white},%opt{dark}"
@@ -79,7 +89,7 @@ set-face global StatusLineInfo "%opt{purple},%opt{black}"
 set-face global StatusLineValue "%opt{orange},%opt{black}"
 set-face global StatusCursor "%opt{white},%opt{blue}"
 set-face global Prompt "%opt{black},%opt{green}"
-set-face global MatchingChar "%opt{blue},%opt{black}"
+set-face global MatchingChar "%opt{black},%opt{blue}"
 set-face global Whitespace "%opt{gray},%opt{black}+f"
 set-face global WrapMarker Whitespace
 set-face global BufferPadding "%opt{gray},%opt{black}"

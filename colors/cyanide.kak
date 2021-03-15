@@ -1,4 +1,4 @@
-# cyanide theme for Kakoune
+# Cyanide theme for Kakoune
 
 # Color palette
 # declare-option str black 'rgb:282C34'
@@ -67,7 +67,7 @@ set-face global LineNumberCursor "%opt{cyan},%opt{black}+b"
 set-face global LineNumbersWrapped "%opt{gray},%opt{black}+i"
 set-face global MenuForeground "%opt{dark},%opt{white}+b"
 set-face global MenuBackground "%opt{white},%opt{dark}"
-set-face global MenuInfo "%opt{dark},%opt{orange}"
+set-face global MenuInfo "%opt{orange},%opt{dark}"
 set-face global Information "%opt{yellow},%opt{gray}"
 set-face global Error "%opt{red},%opt{black}"
 set-face global StatusLine "%opt{white},%opt{black}"
