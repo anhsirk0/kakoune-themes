@@ -1,5 +1,5 @@
-colorscheme mygruvbox
-add-highlighter global/ number-lines -relative -hlcursor
+colorscheme undoo
+add-highlighter global/ number-lines -hlcursor
 # add-highlighter global/ show-whitespaces
 # xsel system --clipboard 
 hook global RegisterModified '"' %{ nop %sh{
@@ -57,7 +57,7 @@ map global insert <a-s> '<a-;>xi'
 
 # go to begining and end of a line in insert mode
 map global insert <a-right> '<a-;>gl<right>'
-map global insert <a-left> '<a-;>gh'
+map global insert <a-left> '<a-;>gi'
 
 # center the cursor vertically
 map global insert <a-v> '<a-;>vv'
@@ -68,9 +68,13 @@ map global insert <a-up> '<esc><esc>xdkPki'
 
 # new line
 map global insert <c-n> '<a-;>o'
+# goto line number
+map global insert <c-g> '<esc><esc><esc>: goto-line '
 
 # goto a word
 map global insert <a-g> '<esc>/'
+# multiline comment snippet
+map global insert <a-c> '"""<esc>xypo'
 
 # auto add brackets and inverted commas
 map global insert '(' '()<left>'
@@ -79,6 +83,9 @@ map global insert '{' '{}<left>'
 
 map global insert "'" "''<left>"
 map global insert '"' '""<left>'
+
+# <a-.> to goto last modified position
+map global insert <a-.> '<a-;>g.' 
 
 # comment-line in insert mode
 map global insert '' '<a-;>: comment-line <ret>'
@@ -137,8 +144,15 @@ unmap-sequence -params 2 %{
 }
 
 map-sequence global jj %{exec <esc>}
+map-sequence global kk %{exec <esc><esc><esc>}
 
 set-option global modelinefmt '%val{bufname} %val{cursor_line}:%val{cursor_char_column} {{context_info}} {{mode_info}}'
+
+define-command -params 1 -docstring "Goto line number (insert mode)" \
+    goto-line %{
+        execute-keys -with-hooks %arg{1} gi
+    }
+
 
 define-command \
     -params 2 \
