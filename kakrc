@@ -1,6 +1,6 @@
-colorscheme undoo
+colorscheme one-dark
 add-highlighter global/ number-lines -hlcursor
-# add-highlighter global/ show-whitespaces
+add-highlighter global/ show-whitespaces
 # xsel system --clipboard 
 hook global RegisterModified '"' %{ nop %sh{
   printf %s "$kak_main_reg_dquote" | xsel --input --clipboard
@@ -55,6 +55,14 @@ map global insert <c-d> '<a-;>x<a-;>y<a-;>p<down>'
 # <a-s> select line
 map global insert <a-s> '<a-;>xi'
 
+# auto add brackets and inverted commas
+map global insert '(' '()<left>'
+map global insert '[' '[]<left>'
+map global insert '{' '{}<left>'
+
+map global insert "'" "''<left>"
+map global insert '"' '""<left>'
+
 # go to begining and end of a line in insert mode
 map global insert <a-right> '<a-;>gl<right>'
 map global insert <a-left> '<a-;>gi'
@@ -75,20 +83,21 @@ map global insert <c-g> '<esc><esc><esc>: goto-line '
 map global insert <a-g> '<esc>/'
 # multiline comment snippet
 map global insert <a-c> '"""<esc>xypo'
-
-# auto add brackets and inverted commas
-map global insert '(' '()<left>'
-map global insert '[' '[]<left>'
-map global insert '{' '{}<left>'
-
-map global insert "'" "''<left>"
-map global insert '"' '""<left>'
-
+# python for loop snippet
+map global insert <c-e> '<esc><esc>glGI|sed -e "s/for\./for /" -e "s/\./ in range(/" -e "s/$/):/"<ret>o'
+# auto indent inside of brackets
+map global insert <a-ret> '<ret><esc><esc><esc>ko.<esc>h>c'
 # <a-.> to goto last modified position
-map global insert <a-.> '<a-;>g.' 
+map global insert <a-.> '<a-;>g.'
+# emmet expansion in insert mode
+map global insert <a-e> '<esc><esc><esc>x:emmet <ret>i'
 
 # comment-line in insert mode
 map global insert '' '<a-;>: comment-line <ret>'
+
+define-command emmet %{
+    execute-keys "| xargs bash ~/.config/kak/plugins/emmet.sh <ret>"
+}
 
 define-command -hidden -docstring \
 "select a word under cursor, or add cursor on next occurrence of current selection" \
@@ -149,10 +158,9 @@ map-sequence global kk %{exec <esc><esc><esc>}
 set-option global modelinefmt '%val{bufname} %val{cursor_line}:%val{cursor_char_column} {{context_info}} {{mode_info}}'
 
 define-command -params 1 -docstring "Goto line number (insert mode)" \
-    goto-line %{
-        execute-keys -with-hooks %arg{1} gi
-    }
-
+goto-line %{
+    execute-keys -with-hooks %arg{1} gi
+}
 
 define-command \
     -params 2 \
@@ -200,3 +208,11 @@ define-command \
     }
 }
 
+# hook global ModeChange insert:.* %{
+#     set-face global PrimaryCursor      rgb:ffffff,rgb:000000+F
+# }
+
+# hook global ModeChange .*:insert %{
+#     set-face global PrimaryCursor      rgb:ffffff,rgb:008800+F
+# }
+# source "/home/krishna/.config/kak/plugins/emmet.kak"
