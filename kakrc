@@ -1,3 +1,11 @@
+
+# ██╗  ██╗ █████╗ ██╗  ██╗ ██████╗ ██╗   ██╗███╗   ██╗███████╗
+# ██║ ██╔╝██╔══██╗██║ ██╔╝██╔═══██╗██║   ██║████╗  ██║██╔════╝
+# █████╔╝ ███████║█████╔╝ ██║   ██║██║   ██║██╔██╗ ██║█████╗  
+# ██╔═██╗ ██╔══██║██╔═██╗ ██║   ██║██║   ██║██║╚██╗██║██╔══╝  
+# ██║  ██╗██║  ██║██║  ██╗╚██████╔╝╚██████╔╝██║ ╚████║███████╗
+# ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═══╝╚══════╝
+
 colorscheme one-dark
 add-highlighter global/ number-lines -hlcursor
 add-highlighter global/ show-whitespaces
@@ -8,13 +16,9 @@ hook global RegisterModified '"' %{ nop %sh{
 
 map global normal p '<a-!>xsel --output --clipboard<ret>'
 
-# Movement
-# ––––––––––––––––––––––––––––––––––––––
-
 map global insert <tab> '<a-;><gt>'
 map global insert <s-tab> '<a-;><lt>'
 set-option global indentwidth 4
-# If you want to implement the following section, use this instead:
 
 # Ctrl for moving objects in insert mode
 map global insert <c-left>    '<a-;>b<a-;>;'
@@ -86,18 +90,19 @@ map global insert <a-c> '"""<esc>xypo'
 # python for loop snippet
 map global insert <c-e> '<esc><esc>glGI|sed -e "s/for\./for /" -e "s/\./ in range(/" -e "s/$/):/"<ret>o'
 # auto indent inside of brackets
-map global insert <a-ret> '<ret><esc><esc><esc>ko.<esc>h>c'
+map global insert <a-ret> '<ret>.<ret><up><esc><esc><esc> >c'
 # <a-.> to goto last modified position
 map global insert <a-.> '<a-;>g.'
-# emmet expansion in insert mode
-map global insert <a-e> '<esc><esc><esc>x:emmet <ret>i'
 
 # comment-line in insert mode
 map global insert '' '<a-;>: comment-line <ret>'
 
-define-command emmet %{
-    execute-keys "| xargs bash ~/.config/kak/plugins/emmet.sh <ret>"
-}
+# # emmet expansion in insert mode
+# map global insert <a-e> '<esc><esc><esc>x:emmet <ret>i'
+
+# define-command emmet %{
+#     execute-keys "| xargs bash ~/.config/kak/plugins/emmet.sh <ret>"
+# }
 
 define-command -hidden -docstring \
 "select a word under cursor, or add cursor on next occurrence of current selection" \
@@ -130,9 +135,6 @@ hook global InsertCompletionHide .* %{
     unmap window insert <s-tab> '<c-p>'
     unmap window insert <esc>   '<c-o>'
 }
-
-# hook global ModeChange ".*:normal" %{ face ... }
-# hook global ModeChange ".*:insert" %{ face normal }
 
 map global normal '<c-d>' ': select-or-add-cursor<ret>' -docstring "add cursor on current word, and jump to the next match" 
 define-command -docstring "map-sequence <scope> <sequence> <command>: map <sequence> of keys to <command> in insert mode." \
@@ -215,4 +217,3 @@ define-command \
 # hook global ModeChange .*:insert %{
 #     set-face global PrimaryCursor      rgb:ffffff,rgb:008800+F
 # }
-# source "/home/krishna/.config/kak/plugins/emmet.kak"
