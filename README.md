@@ -1,11 +1,14 @@
 # kakoune
 custom config , syntax-highlighting , color schemes for kakoune
 
-## Cyanide color scheme
-![Cyanide color scheme ](https://github.com/anhsirk0/kakoune/blob/main/screenshots/cyanide.png)
+## Warm color scheme
+![Warm color scheme ](https://github.com/anhsirk0/kakoune/blob/main/screenshots/warm.png)
 
 ## Cherry color scheme
 ![Cherry color scheme ](https://github.com/anhsirk0/kakoune/blob/main/screenshots/cherry.png)
+
+## Cyanide color scheme
+![Cyanide color scheme ](https://github.com/anhsirk0/kakoune/blob/main/screenshots/cyanide.png)
 
 ## Undoo color scheme
 ![Undoo color scheme ](https://github.com/anhsirk0/kakoune/blob/main/screenshots/undoo.png)
@@ -13,11 +16,11 @@ custom config , syntax-highlighting , color schemes for kakoune
 ## Monokai color scheme
 ![Monokai color scheme ](https://github.com/anhsirk0/kakoune/blob/main/screenshots/monokai.png)
 
-## Nord color scheme
-![Nord color scheme ](https://github.com/anhsirk0/kakoune/blob/main/screenshots/nord.png)
-
 ## One-dark color scheme
 ![One-dark color scheme ](https://github.com/anhsirk0/kakoune/blob/main/screenshots/one_dark.png)
+
+## Mygruvbox color scheme
+![Mygruvbox color scheme ](https://github.com/anhsirk0/kakoune/blob/main/screenshots/mygruvbox.png)
 
 background color is set to terminal's default'
 ## usage
