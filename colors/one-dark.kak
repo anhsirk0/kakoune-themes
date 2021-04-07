@@ -1,11 +1,11 @@
-# one-dark theme for Kakoune
+# One-dark theme for Kakoune
 
 # Color palette
-# declare-option str black 'rgb:282C34'
+# declare-option str black 'rgb:282c34'
 declare-option str black default
 declare-option str gray 'rgb:5C6370'
 # declare-option str dark 'rgb:454545'
-declare-option str dark 'rgb:282c34'
+declare-option str dark 'rgb:1e2127'
 declare-option str white 'rgb:abb2bf'
 declare-option str blue 'rgb:61afef'
 declare-option str cyan 'rgb:50cacd'
@@ -18,6 +18,7 @@ declare-option str purple 'rgb:c678dd'
 declare-option str red 'rgb:efa6a2'
 declare-option str yellow 'rgb:c8c874'
 declare-option str azure 'rgb:74c3e4'
+declare-option str dimgray 'rgb:454b4e'
 
 declare-option str background %opt{black}
 declare-option str dimmed_background %opt{gray}
@@ -58,8 +59,8 @@ set-face global bullet "%opt{green}"
 set-face global list "%opt{white}"
 
 # Builtin faces
-# set-face global Default "%opt{white},%opt{dark}"
-set-face global Default "%opt{white},default"
+set-face global Default "%opt{white},%opt{black}"
+# set-face global Default "%opt{white},default"
 set-face global PrimarySelection "%opt{dark},%opt{purple}"
 set-face global SecondarySelection "%opt{dark},%opt{purple}"
 set-face global PrimaryCursor "%opt{dark},%opt{purple}"
@@ -72,7 +73,7 @@ set-face global LineNumbersWrapped "%opt{gray},%opt{black}+i"
 set-face global MenuForeground "%opt{dark},%opt{aqua}+b"
 set-face global MenuBackground "%opt{white},%opt{dark}"
 set-face global MenuInfo "%opt{orange},%opt{dark}"
-set-face global Information "%opt{yellow},%opt{gray}"
+set-face global Information "%opt{yellow},%opt{black}"
 set-face global Error "%opt{red},%opt{black}"
 set-face global StatusLine "%opt{white},%opt{black}"
 set-face global StatusLineMode "%opt{green},%opt{black}"
@@ -81,6 +82,6 @@ set-face global StatusLineValue "%opt{orange},%opt{black}"
 set-face global StatusCursor "%opt{white},%opt{blue}"
 set-face global Prompt "%opt{black},%opt{green}"
 set-face global MatchingChar "%opt{black},%opt{blue}"
-set-face global Whitespace "%opt{gray},%opt{black}+f"
+set-face global Whitespace "%opt{dimgray},%opt{black}+f"
 set-face global WrapMarker Whitespace
 set-face global BufferPadding "%opt{gray},%opt{black}"

@@ -1,7 +1,7 @@
 # Monokai theme for Kakoune
 
 # Color palette
-# declare-option str black 'rgb:282C34'
+# declare-option str black 'rgb:272822'
 declare-option str black default
 declare-option str dark 'rgb:191919'
 declare-option str gray 'rgb:5C6370'
@@ -15,6 +15,7 @@ declare-option str pink 'rgb:F92672'
 declare-option str purple 'rgb:ae81ff'
 declare-option str red 'rgb:f92672'
 declare-option str yellow 'rgb:e6db74'
+declare-option str dimgray 'rgb:464850'
 
 declare-option str background %opt{black}
 declare-option str dimmed_background %opt{gray}
@@ -52,8 +53,8 @@ set-face global bullet "%opt{green}"
 set-face global list "%opt{white}"
 
 # Builtin faces
-# set-face global Default "%opt{white},%opt{black}"
-set-face global Default default,default
+set-face global Default "%opt{white},%opt{black}"
+# set-face global Default default,default
 set-face global PrimarySelection "%opt{dark},%opt{purple}"
 set-face global SecondarySelection "%opt{black},%opt{purple}"
 set-face global PrimaryCursor "%opt{dark},%opt{purple}"
@@ -66,15 +67,15 @@ set-face global LineNumbersWrapped "%opt{gray},%opt{black}+i"
 set-face global MenuForeground "%opt{dark},%opt{white}+b"
 set-face global MenuBackground "%opt{white},%opt{dark}"
 set-face global MenuInfo "%opt{orange},%opt{dark}"
-set-face global Information "%opt{yellow},%opt{gray}"
+set-face global Information "%opt{yellow},%opt{black}"
 set-face global Error "%opt{red},%opt{black}"
-set-face global StatusLine "%opt{white},%opt{dark}"
+set-face global StatusLine "%opt{white},%opt{black}"
 set-face global StatusLineMode "%opt{green},%opt{black}"
 set-face global StatusLineInfo "%opt{purple},%opt{black}"
 set-face global StatusLineValue "%opt{orange},%opt{black}"
 set-face global StatusCursor "%opt{white},%opt{blue}"
 set-face global Prompt "%opt{black},%opt{green}"
 set-face global MatchingChar "%opt{black},%opt{blue}"
-set-face global Whitespace "%opt{gray},%opt{black}+f"
+set-face global Whitespace "%opt{dimgray},%opt{black}+f"
 set-face global WrapMarker Whitespace
 set-face global BufferPadding "%opt{gray},%opt{black}"
