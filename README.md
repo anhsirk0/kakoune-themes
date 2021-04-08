@@ -21,8 +21,10 @@ custom config , syntax-highlighting , color schemes for kakoune
 
 ## Mygruvbox color scheme
 ![Mygruvbox color scheme ](https://github.com/anhsirk0/kakoune/blob/main/screenshots/mygruvbox.png)
+mygruvbox is almost identical to original gruvbox {whitespace color is dimmed & few other minor changes}  
+gruvbox name was already taken so i have to resort to mygruvbox
 
-background color is set to terminal's default'
+## background color is set to terminal's default'
 ## usage
 add colors to ~/.config/kak/
 ```bash
