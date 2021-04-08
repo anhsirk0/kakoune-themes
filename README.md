@@ -1,4 +1,4 @@
-# kakoune
+# kakoune themes
 custom config , syntax-highlighting , color schemes for kakoune
 
 ## Warm color scheme
