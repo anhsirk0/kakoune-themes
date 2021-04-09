@@ -1,8 +1,8 @@
 # Mygruvbox theme for Kakoune
 
 # Color palette
-declare-option str black 'rgb:282828'
-# declare-option str black default
+# declare-option str black 'rgb:282828'
+declare-option str black default
 declare-option str dark 'rgb:1d2021'
 declare-option str gray 'rgb:928374'
 declare-option str aqua 'rgb:8ec07c'
