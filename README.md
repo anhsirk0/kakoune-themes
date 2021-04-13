@@ -1,6 +1,10 @@
 # kakoune themes
 custom config , syntax-highlighting , color schemes for kakoune
 
+## Pastel color scheme
+![Pastel color scheme ](https://github.com/anhsirk0/kakoune/blob/main/screenshots/pastel.png)
+> Background color #2B2E33
+
 ## Warm color scheme
 ![Warm color scheme ](https://github.com/anhsirk0/kakoune/blob/main/screenshots/warm.png)
 > Background color #222120
