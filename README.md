@@ -2,36 +2,36 @@
 custom config , syntax-highlighting , color schemes for kakoune
 
 ## Pastel color scheme
-![Pastel color scheme ](https://github.com/anhsirk0/kakoune/blob/main/screenshots/pastel.png)
+![Pastel color scheme ](https://github.com/anhsirk0/kakoune/blob/master/screenshots/pastel.png)
 > Background color #2B2E33
 
 ## Warm color scheme
-![Warm color scheme ](https://github.com/anhsirk0/kakoune/blob/main/screenshots/warm.png)
+![Warm color scheme ](https://github.com/anhsirk0/kakoune/blob/master/screenshots/warm.png)
 > Background color #222120
 
 ## Cherry color scheme
-![Cherry color scheme ](https://github.com/anhsirk0/kakoune/blob/main/screenshots/cherry.png)
+![Cherry color scheme ](https://github.com/anhsirk0/kakoune/blob/master/screenshots/cherry.png)
 > Background color #23232F
 
 ## Cyanide color scheme
-![Cyanide color scheme ](https://github.com/anhsirk0/kakoune/blob/main/screenshots/cyanide.png)
+![Cyanide color scheme ](https://github.com/anhsirk0/kakoune/blob/master/screenshots/cyanide.png)
 > Background color #141414
 
 ## Undoo color scheme
-![Undoo color scheme ](https://github.com/anhsirk0/kakoune/blob/main/screenshots/undoo.png)
+![Undoo color scheme ](https://github.com/anhsirk0/kakoune/blob/master/screenshots/undoo.png)
 > Background color #101010
 
 ## Monokai color scheme
-![Monokai color scheme ](https://github.com/anhsirk0/kakoune/blob/main/screenshots/monokai.png)
+![Monokai color scheme ](https://github.com/anhsirk0/kakoune/blob/master/screenshots/monokai.png)
 *monokai syntax is different than the sublime's monokai*
 > Background color #2C2C2D
 
 ## One-dark color scheme
-![One-dark color scheme ](https://github.com/anhsirk0/kakoune/blob/main/screenshots/one_dark.png)
+![One-dark color scheme ](https://github.com/anhsirk0/kakoune/blob/master/screenshots/one_dark.png)
 > Background color #282C34
 
 ## Mygruvbox color scheme
-![Mygruvbox color scheme ](https://github.com/anhsirk0/kakoune/blob/main/screenshots/mygruvbox.png)
+![Mygruvbox color scheme ](https://github.com/anhsirk0/kakoune/blob/master/screenshots/mygruvbox.png)
 mygruvbox is almost identical to original gruvbox {whitespace color is dimmed & few other minor changes}  
 gruvbox name was already taken so i have to resort to mygruvbox
 > Background color #272727
