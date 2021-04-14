@@ -6,9 +6,10 @@
 # ██║  ██╗██║  ██║██║  ██╗╚██████╔╝╚██████╔╝██║ ╚████║███████╗
 # ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═══╝╚══════╝
 
-colorscheme one-dark
+colorscheme pastel
 add-highlighter global/ number-lines -hlcursor
 add-highlighter global/ show-whitespaces
+set-option global ui_options ncurses_assistant=dilbert
 # xsel system --clipboard 
 hook global RegisterModified '"' %{ nop %sh{
   printf %s "$kak_main_reg_dquote" | xsel --input --clipboard
@@ -79,7 +80,7 @@ map global insert <a-down> '<esc><esc>xdjPki'
 map global insert <a-up> '<esc><esc>xdkPki'
 
 # new line
-map global insert <c-n> '<a-;>o'
+map global insert <c-n> '<esc>o'
 # goto line number
 map global insert <c-g> '<esc><esc><esc>: goto-line '
 
@@ -217,3 +218,11 @@ define-command \
 # hook global ModeChange .*:insert %{
 #     set-face global PrimaryCursor      rgb:ffffff,rgb:008800+F
 # }
+# source ~/.config/kak/plugins/emmet.kak
+
+# # kak-lsp
+# eval %sh{kak-lsp --kakoune -s $kak_session}
+# hook global WinSetOption filetype=(rust|python|c) %{
+#     lsp-enable-window
+# }
+# set-option global lsp_server_configuration pyls.configurationSources=["flake8"]
