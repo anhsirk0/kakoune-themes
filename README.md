@@ -48,6 +48,12 @@ cp colors ~/.config/kak/ -r
  - for example to modify syntax highlighting for python modify **/usr/share/kak/rc/filetype/python.kak**
  - for shell file type (bash, zsh etc) **/usr/share/kak/rc/filetype/sh.kak**  
 
+### you can just copy filetype from the repo (you have to be root)
+```bash
+# cp filetype/* /usr/share/kak/rc/filetype/ -r
+```
+### or you can manually add regexes
+
 add this regex for functions
 > '[a-zA-Z_0-9]+\(+' 0:function
 
@@ -62,3 +68,8 @@ add these line (probably in middle or somewhere)
 > add-highlighter shared/python/code/ regex '[(){}\[\]]' 0:bracket
 
 ### see filetypes for more info
+
+## Thanks
+Cherry theme -  https://github.com/nullxception/cherry-vscode
+Gruvbox theme - https://github.com/morhetz/gruvbox
+One Dark theme - https://github.com/atom/one-dark-syntax
