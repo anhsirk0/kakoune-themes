@@ -78,6 +78,7 @@ add these line (probably in middle or somewhere)
 ### see filetypes for more info
 
 ## Thanks
-Cherry theme -  https://github.com/nullxception/cherry-vscode
-Gruvbox theme - https://github.com/morhetz/gruvbox
-One Dark theme - https://github.com/atom/one-dark-syntax
+Cherry theme -  https://github.com/nullxception/cherry-vscode  
+Gruvbox theme - https://github.com/morhetz/gruvbox  
+One Dark theme - https://github.com/atom/one-dark-syntax  
+Ayu theme - https://github.com/dempfi/ayu  
