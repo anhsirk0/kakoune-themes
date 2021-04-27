@@ -1,4 +1,4 @@
-# Ayu-dark theme for Kakoune
+# Ayu-Mirage theme for Kakoune
 
 # Color palette
 # declare-option str black 'rgb:1f2430'
