@@ -1,6 +1,14 @@
 # kakoune themes
 custom config , syntax-highlighting , color schemes for kakoune
 
+## Ayu-mirage color scheme
+![ayu_mirage color scheme ](https://github.com/anhsirk0/kakoune/blob/master/screenshots/ayu_mirage.png)
+> Background color #1F2430
+
+## Ayu-dark color scheme
+![ayu_dark color scheme ](https://github.com/anhsirk0/kakoune/blob/master/screenshots/ayu_dark.png)
+> Background color #0A0E14
+
 ## Pastel color scheme
 ![Pastel color scheme ](https://github.com/anhsirk0/kakoune/blob/master/screenshots/pastel.png)
 > Background color #2B2E33
