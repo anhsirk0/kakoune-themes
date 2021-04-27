@@ -63,25 +63,39 @@ cp colors ~/.config/kak/ -r
 ### or you can manually add regexes
 
 add this regex for functions
-> '[a-zA-Z_0-9]+\(+' 0:function
+```text
+'[a-zA-Z_0-9]+\(+' 0:function
+```
 
 add this regex for class
-> '[^a-z][A-Z][a-zA-Z_0-9]+' 0:class
+```text
+'[^a-z][A-Z][a-zA-Z_0-9]+' 0:class
+```
 
 add this regex for constant
-> '[A-Z]+[^a-z]+' 0:constant
+```text
+'[A-Z]+[^a-z]+' 0:constant
+```
 
 add this regex for arguement
-> '\([a-zA-Z, ._]+\)' 0:arguement
+```text
+'\([a-zA-Z, ._]+\)' 0:arguement
+```
 
 add this regex for builtin
-> '__[a-zA-Z_0-9]+__' 1:builtin
+```text
+'__[a-zA-Z_0-9]+__' 1:builtin
+```
 
 add this regex for brackets
-> '[(){}\[\]]' 0:bracket
+```text
+'[(){}\[\]]' 0:bracket
+```
 
 add this regex for comma
-> '[,]' 0:comma
+```text
+'[,]' 0:comma
+```
 
 # for example (python.kak)
 add these line (probably in middle or somewhere)
