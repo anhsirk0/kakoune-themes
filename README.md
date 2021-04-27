@@ -34,7 +34,7 @@ custom config , syntax-highlighting , color schemes for kakoune
 ![Mygruvbox color scheme ](https://github.com/anhsirk0/kakoune/blob/master/screenshots/mygruvbox.png)
 mygruvbox is almost identical to original gruvbox {whitespace color is dimmed & few other minor changes}  
 gruvbox name was already taken so i have to resort to mygruvbox
-> Background color #272727
+> Background color #282828
 
 ## background color is set to terminal's default'
 ## usage
