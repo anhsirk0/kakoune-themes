@@ -1,5 +1,5 @@
 # kakoune themes
-custom config , syntax-highlighting , color schemes for kakoune
+custom config , syntax-highlighting , color schemes for kakoune (now with transparent selections)
 
 ## Ayu-mirage color scheme
 ![ayu_mirage color scheme ](https://github.com/anhsirk0/kakoune/blob/master/screenshots/ayu_mirage.png)
@@ -27,7 +27,7 @@ custom config , syntax-highlighting , color schemes for kakoune
 
 ## Undoo color scheme
 ![Undoo color scheme ](https://github.com/anhsirk0/kakoune/blob/master/screenshots/undoo.png)
-> Background color #101010
+> Background color #171A1F
 
 ## Monokai color scheme
 ![Monokai color scheme ](https://github.com/anhsirk0/kakoune/blob/master/screenshots/monokai.png)
