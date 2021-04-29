@@ -6,7 +6,6 @@ declare-option str black default
 declare-option str gray 'rgb:808080'
 declare-option str dark 'rgb:2f2f40'
 declare-option str white 'rgb:f1f1f1'
-# declare-option str white default
 declare-option str aqua 'rgb:62c6da'
 declare-option str cyan 'rgb:50cacd'
 declare-option str blue 'rgb:73a9ff'
@@ -19,6 +18,8 @@ declare-option str red 'rgb:efa6a2'
 declare-option str yellow 'rgb:efff73'
 declare-option str azure 'rgb:74c3e4'
 declare-option str dimgray 'rgb:404040'
+declare-option str psel 'rgba:3c3c5080'
+declare-option str ssel 'rgba:35374680'
 
 declare-option str background %opt{black}
 declare-option str dimmed_background %opt{gray}
@@ -61,12 +62,12 @@ set-face global list "%opt{white}"
 # Builtin faces
 set-face global Default "%opt{white},%opt{black}"
 # set-face global Default default,default
-set-face global PrimarySelection "%opt{dark},%opt{purple}"
-set-face global SecondarySelection "%opt{dark},%opt{purple}"
+set-face global PrimarySelection "default,%opt{psel}"
+set-face global SecondarySelection "default,%opt{ssel}"
 set-face global PrimaryCursor "%opt{dark},%opt{purple}"
-set-face global SecondaryCursor "%opt{black},%opt{orange}"
-set-face global PrimaryCursorEol "%opt{black},%opt{cyan}"
-set-face global SecondaryCursorEol "%opt{orange},%opt{black}"
+set-face global SecondaryCursor "%opt{dark},%opt{cyan}"
+set-face global PrimaryCursorEol "%opt{dark},%opt{yellow}"
+set-face global SecondaryCursorEol "%opt{dark},%opt{blue}"
 set-face global LineNumbers "%opt{gray},%opt{black}"
 set-face global LineNumberCursor "%opt{pink},%opt{black}+b"
 set-face global LineNumbersWrapped "%opt{gray},%opt{black}+i"
@@ -80,7 +81,7 @@ set-face global StatusLineMode "%opt{green},%opt{black}"
 set-face global StatusLineInfo "%opt{purple},%opt{black}"
 set-face global StatusLineValue "%opt{orange},%opt{black}"
 set-face global StatusCursor "%opt{white},%opt{blue}"
-set-face global Prompt "%opt{black},%opt{green}"
+set-face global Prompt "%opt{green},%opt{black}"
 set-face global MatchingChar "%opt{blue},%opt{black}"
 set-face global Whitespace "%opt{dimgray},%opt{black}+f"
 set-face global WrapMarker Whitespace

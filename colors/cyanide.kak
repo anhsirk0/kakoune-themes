@@ -1,7 +1,7 @@
 # Cyanide theme for Kakoune
 
 # Color palette
-# declare-option str black 'rgb:0a0a0a'
+# declare-option str black 'rgb:171a1f'
 declare-option str black default
 declare-option str dark 'rgb:191919'
 declare-option str gray 'rgb:5C6370'
@@ -18,6 +18,8 @@ declare-option str red 'rgb:D70000'
 declare-option str yellow 'rgb:F1FA8C'
 declare-option str dimgray 'rgb:353535'
 
+declare-option str psel 'rgba:27374780'
+declare-option str ssel 'rgba:1b273380'
 declare-option str background %opt{black}
 declare-option str dimmed_background %opt{gray}
 declare-option str foreground %opt{white}
@@ -57,12 +59,12 @@ set-face global list "%opt{white}"
 # Builtin faces
 set-face global Default "%opt{white},%opt{black}"
 # set-face global Default default,default
-set-face global PrimarySelection "%opt{dark},%opt{purple}"
-set-face global SecondarySelection "%opt{black},%opt{purple}"
+set-face global PrimarySelection "default,%opt{psel}"
+set-face global SecondarySelection "default,%opt{ssel}"
 set-face global PrimaryCursor "%opt{dark},%opt{purple}"
-set-face global SecondaryCursor "%opt{black},%opt{orange}"
-set-face global PrimaryCursorEol "%opt{black},%opt{cyan}"
-set-face global SecondaryCursorEol "%opt{black},%opt{orange}"
+set-face global SecondaryCursor "%opt{dark},%opt{aqua}"
+set-face global PrimaryCursorEol "%opt{dark},%opt{orange}"
+set-face global SecondaryCursorEol "%opt{dark},%opt{cyan}"
 set-face global LineNumbers "%opt{gray},%opt{black}"
 set-face global LineNumberCursor "%opt{cyan},%opt{black}+b"
 set-face global LineNumbersWrapped "%opt{gray},%opt{black}+i"
@@ -76,7 +78,7 @@ set-face global StatusLineMode "%opt{green},%opt{black}"
 set-face global StatusLineInfo "%opt{purple},%opt{black}"
 set-face global StatusLineValue "%opt{orange},%opt{black}"
 set-face global StatusCursor "%opt{white},%opt{blue}"
-set-face global Prompt "%opt{black},%opt{green}"
+set-face global Prompt "%opt{green},%opt{black}"
 set-face global MatchingChar "%opt{black},%opt{blue}"
 set-face global Whitespace "%opt{dimgray},%opt{black}+f"
 set-face global WrapMarker Whitespace

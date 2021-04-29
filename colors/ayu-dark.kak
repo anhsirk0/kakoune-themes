@@ -18,6 +18,8 @@ declare-option str pink 'rgb:f07178'
 declare-option str purple 'rgb:ca9bf7'
 declare-option str red 'rgb:ff3333'
 declare-option str yellow 'rgb:ffee99'
+declare-option str psel 'rgba:27374780'
+declare-option str ssel 'rgba:1b273380'
 declare-option str lime 'rgb:91b362'
 declare-option str dimgray 'rgb:1b2733'
 
@@ -60,12 +62,12 @@ set-face global list "%opt{white}"
 # Builtin faces
 set-face global Default "%opt{white},%opt{black}"
 # set-face global Default "%opt{white},default"
-set-face global PrimarySelection "%opt{dark},%opt{green}"
-set-face global SecondarySelection "%opt{black},%opt{purple}"
-set-face global PrimaryCursor "%opt{dark},%opt{purple}"
+set-face global PrimarySelection "default,%opt{psel}"
+set-face global SecondarySelection "default,%opt{ssel}"
+set-face global PrimaryCursor "%opt{dark},%opt{cyan}"
 set-face global SecondaryCursor "%opt{dark},%opt{aqua}"
-set-face global PrimaryCursorEol "%opt{black},%opt{cyan}"
-set-face global SecondaryCursorEol "%opt{black},%opt{aqua}"
+set-face global PrimaryCursorEol "%opt{dark},%opt{light_orange}"
+set-face global SecondaryCursorEol "%opt{dark},%opt{blue}"
 set-face global LineNumbers "%opt{gray},%opt{black}"
 set-face global LineNumberCursor "%opt{purple},%opt{black}+b"
 set-face global LineNumbersWrapped "%opt{gray},%opt{black}+i"

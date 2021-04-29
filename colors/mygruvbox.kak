@@ -15,9 +15,11 @@ declare-option str orange 'rgb:fe8019'
 declare-option str pink 'rgb:F879C6'
 declare-option str purple 'rgb:d3869b'
 declare-option str red 'rgb:fb4934'
-declare-option str yellow 'rgb:d79921'
-declare-option str dimgray 'rgb:484848'
+declare-option str yellow 'rgb:fab2df'
+declare-option str dimgray 'rgb:424242'
 
+declare-option str psel 'rgba:50494580'
+declare-option str ssel 'rgba:3c383880'
 declare-option str background %opt{black}
 declare-option str dimmed_background %opt{gray}
 declare-option str foreground %opt{white}
@@ -56,12 +58,12 @@ set-face global list "%opt{white}"
 # Builtin faces
 set-face global Default "%opt{white},%opt{black}"
 # set-face global Default "%opt{white},default"
-set-face global PrimarySelection "%opt{dark},%opt{green}"
-set-face global SecondarySelection "%opt{black},%opt{purple}"
+set-face global PrimarySelection "default,%opt{psel}"
+set-face global SecondarySelection "default,%opt{ssel}"
 set-face global PrimaryCursor "%opt{dark},%opt{purple}"
 set-face global SecondaryCursor "%opt{dark},%opt{aqua}"
-set-face global PrimaryCursorEol "%opt{black},%opt{cyan}"
-set-face global SecondaryCursorEol "%opt{black},%opt{aqua}"
+set-face global PrimaryCursorEol "%opt{dark},%opt{yellow}"
+set-face global SecondaryCursorEol "%opt{dark},%opt{cyan}"
 set-face global LineNumbers "%opt{gray},%opt{black}"
 set-face global LineNumberCursor "%opt{yellow},%opt{black}+b"
 set-face global LineNumbersWrapped "%opt{gray},%opt{black}+i"
@@ -75,7 +77,7 @@ set-face global StatusLineMode "%opt{aqua},%opt{black}"
 set-face global StatusLineInfo "%opt{purple},%opt{black}"
 set-face global StatusLineValue "%opt{orange},%opt{black}"
 set-face global StatusCursor "%opt{white},%opt{blue}"
-set-face global Prompt "%opt{black},%opt{green}"
+set-face global Prompt "%opt{green},%opt{black}"
 set-face global MatchingChar "%opt{blue},%opt{black}"
 set-face global Whitespace "%opt{dimgray},%opt{black}+f"
 set-face global WrapMarker Whitespace

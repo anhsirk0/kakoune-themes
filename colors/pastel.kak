@@ -16,7 +16,10 @@ declare-option str pink 'rgb:d38da9'
 declare-option str purple 'rgb:ca9bf7'
 declare-option str red 'rgb:db948e'
 declare-option str yellow 'rgb:e1d179'
+declare-option str lime 'rgb:adc47e'
 declare-option str dimgray 'rgb:3d4747'
+declare-option str psel 'rgba:46466480'
+declare-option str ssel 'rgba:37375580'
 
 declare-option str background %opt{black}
 declare-option str dimmed_background %opt{gray}
@@ -27,7 +30,7 @@ declare-option str foreground %opt{white}
 # For code
 set-face global value "%opt{yellow}"
 set-face global type "%opt{aqua}"
-set-face global variable "%opt{blue_green}"
+set-face global variable "%opt{purple}"
 set-face global module "%opt{white}"
 set-face global function "%opt{orange}"
 set-face global string "%opt{pink}"
@@ -35,9 +38,10 @@ set-face global keyword "%opt{green}"
 set-face global operator "%opt{aqua}"
 set-face global attribute "%opt{blue_green}"
 set-face global bracket "%opt{white}+b"
-set-face global arguement "%opt{purple}"
+set-face global arguement "%opt{blue_green}"
 set-face global comma "%opt{white}"
 set-face global constant "%opt{blue_green}+b"
+set-face global class "%opt{lime}"
 set-face global comment "%opt{gray}+i"
 set-face global meta "%opt{blue}"
 set-face global builtin "%opt{cyan}+b"
@@ -56,12 +60,12 @@ set-face global list "%opt{white}"
 # Builtin faces
 set-face global Default "%opt{white},%opt{black}"
 # set-face global Default "%opt{white},default"
-set-face global PrimarySelection "%opt{dark},%opt{green}"
-set-face global SecondarySelection "%opt{black},%opt{purple}"
+set-face global PrimarySelection "default,%opt{psel}"
+set-face global SecondarySelection "default,%opt{ssel}"
 set-face global PrimaryCursor "%opt{dark},%opt{purple}"
 set-face global SecondaryCursor "%opt{dark},%opt{aqua}"
-set-face global PrimaryCursorEol "%opt{black},%opt{cyan}"
-set-face global SecondaryCursorEol "%opt{black},%opt{aqua}"
+set-face global PrimaryCursorEol "%opt{dark},%opt{yellow}"
+set-face global SecondaryCursorEol "%opt{dark},%opt{blue}"
 set-face global LineNumbers "%opt{gray},%opt{black}"
 set-face global LineNumberCursor "%opt{purple},%opt{black}+b"
 set-face global LineNumbersWrapped "%opt{gray},%opt{black}+i"
@@ -79,4 +83,4 @@ set-face global Prompt "%opt{green},%opt{black}"
 set-face global MatchingChar "%opt{blue},%opt{black}"
 set-face global Whitespace "%opt{dimgray},%opt{black}+f"
 set-face global WrapMarker Whitespace
-set-face global BufferPadding "%opt{gray},%opt{black}"
+set-face global BufferPadding "%opt{black},%opt{black}"
