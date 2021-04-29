@@ -111,3 +111,4 @@ Cherry theme -  https://github.com/nullxception/cherry-vscode
 Gruvbox theme - https://github.com/morhetz/gruvbox  
 One Dark theme - https://github.com/atom/one-dark-syntax  
 Ayu theme - https://github.com/dempfi/ayu  
+Transparent Selections - https://github.com/caksoylar/kakoune-mysticaltutor  
