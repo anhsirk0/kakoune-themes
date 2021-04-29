@@ -23,11 +23,11 @@ custom config , syntax-highlighting , color schemes for kakoune (now with transp
 
 ## Cyanide color scheme
 ![Cyanide color scheme ](https://github.com/anhsirk0/kakoune/blob/master/screenshots/cyanide.png)
-> Background color #141414
+> Background color #171A1F
 
 ## Undoo color scheme
 ![Undoo color scheme ](https://github.com/anhsirk0/kakoune/blob/master/screenshots/undoo.png)
-> Background color #171A1F
+> Background color #101010
 
 ## Monokai color scheme
 ![Monokai color scheme ](https://github.com/anhsirk0/kakoune/blob/master/screenshots/monokai.png)
