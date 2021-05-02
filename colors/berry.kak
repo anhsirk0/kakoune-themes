@@ -18,8 +18,8 @@ declare-option str red 'rgb:efa6a2'
 declare-option str yellow 'rgb:c8c874'
 declare-option str cyan 'rgb:74c3e4'
 declare-option str dimgray 'rgb:404040'
-declare-option str psel 'rgba:3c3c5080'
-declare-option str ssel 'rgba:46465080'
+declare-option str psel 'rgba:46465080'
+declare-option str ssel 'rgba:3c3c5080'
 
 declare-option str background %opt{black}
 declare-option str dimmed_background %opt{gray}
@@ -67,7 +67,7 @@ set-face global SecondarySelection "default,%opt{ssel}"
 set-face global PrimaryCursor "%opt{dark},%opt{purple}"
 set-face global SecondaryCursor "%opt{dark},%opt{orange}"
 set-face global PrimaryCursorEol "%opt{dark},%opt{cyan}"
-set-face global SecondaryCursorEol "%opt{orange},%opt{dark}"
+set-face global SecondaryCursorEol "%opt{dark},%opt{yellow}"
 set-face global LineNumbers "%opt{gray},%opt{black}"
 set-face global LineNumberCursor "%opt{blue},%opt{black}+b"
 set-face global LineNumbersWrapped "%opt{gray},%opt{black}+i"
