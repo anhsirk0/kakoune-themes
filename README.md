@@ -1,5 +1,6 @@
 # kakoune themes
-custom config , syntax-highlighting , color schemes for kakoune (now with transparent selections)
+color schemes for kakoune (now with transparent selections)  
+> This repo is also my personal config for kakoune  
 
 ## Ayu-mirage color scheme
 ![ayu_mirage color scheme ](https://github.com/anhsirk0/kakoune/blob/master/screenshots/ayu_mirage.png)
