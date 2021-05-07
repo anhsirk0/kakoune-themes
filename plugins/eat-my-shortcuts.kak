@@ -1,3 +1,4 @@
+## my shortcuts most of them are in insert mode
 # xsel system --clipboard
 map global normal p '<a-!>xsel --output --clipboard<ret>'
 map global normal P '!xsel --output --clipboard<ret>'
@@ -45,7 +46,8 @@ map global normal <c-q> ': q<ret>'
 map global insert <c-q> '<esc><esc>'
 
 # <c-d> to duplicate a line
-map global insert <c-d> '<esc>xypji'
+# map global insert <c-d> '<esc>xypji'
+map global insert <c-d> '<esc>x:duplicate-line<ret>i'
 
 # auto add brackets and inverted commas
 map global insert '(' '()<left>'
