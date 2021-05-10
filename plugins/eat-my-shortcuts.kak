@@ -1,4 +1,3 @@
-## my shortcuts most of them are in insert mode
 # xsel system --clipboard
 map global normal p '<a-!>xsel --output --clipboard<ret>'
 map global normal P '!xsel --output --clipboard<ret>'
@@ -32,7 +31,7 @@ map global insert <a-m> '<a-;>E'
 
 # cut copy paste
 # <c-k> to delete a line
-map global insert <c-k> '<esc>x|x<ret>ji'
+map global insert <c-k> '<esc>xdA'
 
 # <c-x> to cut
 map global insert <c-x> '<a-;>d'
@@ -46,7 +45,6 @@ map global normal <c-q> ': q<ret>'
 map global insert <c-q> '<esc><esc>'
 
 # <c-d> to duplicate a line
-# map global insert <c-d> '<esc>xypji'
 map global insert <c-d> '<esc>x:duplicate<ret>A'
 
 # auto add brackets and inverted commas
