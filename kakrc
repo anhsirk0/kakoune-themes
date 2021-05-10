@@ -20,7 +20,7 @@ map global normal '<c-d>' ': select-or-add-cursor<ret>' -docstring "add cursor o
 set-option global modelinefmt '%val{bufname} %val{cursor_line}:%val{cursor_char_column} {{context_info}} {{mode_info}}'
 
 # load plugins and shortucts
-source ~/.config/kak/plugins/duplicate-line.kak
+source ~/.config/kak/plugins/duplicate.kak
 # source ~/.config/kak/plugins/emmet.kak
 source ~/.config/kak/plugins/goto-line.kak
 source ~/.config/kak/plugins/inc-dec.kak

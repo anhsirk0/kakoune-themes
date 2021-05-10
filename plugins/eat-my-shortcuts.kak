@@ -47,7 +47,7 @@ map global insert <c-q> '<esc><esc>'
 
 # <c-d> to duplicate a line
 # map global insert <c-d> '<esc>xypji'
-map global insert <c-d> '<esc>x:duplicate-line<ret>i'
+map global insert <c-d> '<esc>x:duplicate<ret>i'
 
 # auto add brackets and inverted commas
 map global insert '(' '()<left>'
