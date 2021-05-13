@@ -31,7 +31,7 @@ map global insert <a-m> '<a-;>E'
 
 # cut copy paste
 # <c-k> to delete a line
-map global insert <c-k> '<esc>xdA'
+map global insert <c-k> '.<esc>xdA'
 
 # <c-x> to cut
 map global insert <c-x> '<a-;>d'
