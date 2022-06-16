@@ -2,6 +2,10 @@
 color schemes for kakoune (now with transparent selections)  
 > This repo is also my personal config for kakoune  
 
+## Kanagawa color scheme
+![kanagawa color scheme ](https://github.com/anhsirk0/kakoune/blob/master/screenshots/kanagawa.png)
+> Background color #1F1F28
+
 ## Ayu-mirage color scheme
 ![ayu_mirage color scheme ](https://github.com/anhsirk0/kakoune/blob/master/screenshots/ayu_mirage.png)
 > Background color #1F2430
@@ -112,6 +116,7 @@ add these line (probably in middle or somewhere)
 ### see filetypes for more info
 
 ## Thanks
+Kanagawa theme - https://github.com/rebelot/kanagawa.nvim  
 Cherry theme -  https://github.com/nullxception/cherry-vscode  
 Gruvbox theme - https://github.com/morhetz/gruvbox  
 One Dark theme - https://github.com/atom/one-dark-syntax  
