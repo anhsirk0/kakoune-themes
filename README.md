@@ -2,6 +2,10 @@
 color schemes for kakoune (now with transparent selections)  
 > This repo is also my personal config for kakoune  
 
+## Modus vivendi color scheme
+![vivendi color scheme ](https://github.com/anhsirk0/kakoune/blob/master/screenshots/vivendi.png)
+> Background color #000000
+
 ## Kanagawa color scheme
 ![kanagawa color scheme ](https://github.com/anhsirk0/kakoune/blob/master/screenshots/kanagawa.png)
 > Background color #1F1F28
@@ -116,6 +120,7 @@ add these line (probably in middle or somewhere)
 ### see filetypes for more info
 
 ## Thanks
+Modus themes - https://protesilaos.com/emacs/modus-themes-colors  
 Kanagawa theme - https://github.com/rebelot/kanagawa.nvim  
 Cherry theme -  https://github.com/nullxception/cherry-vscode  
 Gruvbox theme - https://github.com/morhetz/gruvbox  
