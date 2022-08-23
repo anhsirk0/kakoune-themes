@@ -6,6 +6,10 @@ color schemes for kakoune (now with transparent selections)
 ![vivendi color scheme ](https://github.com/anhsirk0/kakoune/blob/master/screenshots/vivendi.png)
 > Background color #000000
 
+## Modus operandi color scheme
+![operandi color scheme ](https://github.com/anhsirk0/kakoune/blob/master/screenshots/operandi.png)
+> Background color #ffffff
+
 ## Kanagawa color scheme
 ![kanagawa color scheme ](https://github.com/anhsirk0/kakoune/blob/master/screenshots/kanagawa.png)
 > Background color #1F1F28
