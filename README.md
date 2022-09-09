@@ -68,60 +68,21 @@ add colors to ~/.config/kak/
 cp colors ~/.config/kak/ -r
 ```
 
-## adding syntax for brackets and functions
- - to modify syntax highlighting for a file type modify **/usr/share/kak/rc/filetype/your_file_type.kak**
- - for example to modify syntax highlighting for python modify **/usr/share/kak/rc/filetype/python.kak**
- - for shell file type (bash, zsh etc) **/usr/share/kak/rc/filetype/sh.kak**  
-
-### you can just copy filetype from the repo (you have to be root)
+## use `change-theme.pl` to change the themes (fzf optionally required)
 ```bash
-# cp filetype/* /usr/share/kak/rc/filetype/ -r
+$ perl ~/.config/kak/change-theme.pl 
 ```
-### or you can manually add regexes
-
-add this regex for functions
-```text
-'[a-zA-Z_0-9]+\(+' 0:function
+> This will use fzf to select a theme interactively
+```bash
+$ perl ~/.config/kak/change-theme.pl viv
+'vivendi.kak' theme selected
 ```
-
-add this regex for class
-```text
-'[^a-z][A-Z][a-zA-Z_0-9]+' 0:class
+> This will change theme to the first theme that has viv in its name
+```bash
+$ perl ~/.config/kak/change-theme.pl desert
+'desertex.kak' theme selected
 ```
-
-add this regex for constant
-```text
-'[A-Z]+[^a-z]+' 0:constant
-```
-
-add this regex for arguement
-```text
-'\([a-zA-Z, ._]+\)' 0:arguement
-```
-
-add this regex for builtin
-```text
-'__[a-zA-Z_0-9]+__' 1:builtin
-```
-
-add this regex for brackets
-```text
-'[(){}\[\]]' 0:bracket
-```
-
-add this regex for comma
-```text
-'[,]' 0:comma
-```
-
-# for example (python.kak)
-add these line (probably in middle or somewhere)
-
-> add-highlighter shared/python/code/ regex '[a-zA-Z_0-9]+\(+' 0:function
-
-> add-highlighter shared/python/code/ regex '[(){}\[\]]' 0:bracket
-
-### see filetypes for more info
+> This will change theme to the first theme that has desert in its name, like desertex
 
 ## Thanks
 Modus themes - https://protesilaos.com/emacs/modus-themes-colors  
