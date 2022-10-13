@@ -18,8 +18,8 @@ declare-option str red 'rgb:ef6560'
 declare-option str red_alt 'rgb:f47359'
 declare-option str orange 'rgb:845020'
 declare-option str yellow 'rgb:df9080'
-declare-option str psel 'rgba:35355480'
-declare-option str ssel 'rgba:34246480'
+declare-option str psel 'rgba:34246480'
+declare-option str ssel 'rgba:35355480'
 declare-option str dimgray 'rgb:202234'
 
 declare-option str background %opt{black}
