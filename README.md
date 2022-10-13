@@ -90,6 +90,7 @@ $ perl ~/.config/kak/change-theme.pl desert
 
 ## Thanks
 Modus themes - https://protesilaos.com/emacs/modus-themes-colors  
+Ef themes - https://protesilaos.com/emacs/ef-themes  
 Kanagawa theme - https://github.com/rebelot/kanagawa.nvim  
 Cherry theme -  https://github.com/nullxception/cherry-vscode  
 Gruvbox theme - https://github.com/morhetz/gruvbox  
