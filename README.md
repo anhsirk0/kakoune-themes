@@ -10,6 +10,10 @@ color schemes for kakoune (now with transparent selections)
 ![operandi color scheme ](https://github.com/anhsirk0/kakoune/blob/master/screenshots/operandi.png)
 > Background color #ffffff
 
+## Ef-autumn color scheme
+![ef-autumn color scheme ](https://github.com/anhsirk0/kakoune/blob/master/screenshots/ef-autumn.png)
+> Background color #0f0e06
+
 ## Ef-winter color scheme
 ![ef-winter color scheme ](https://github.com/anhsirk0/kakoune/blob/master/screenshots/ef-winter.png)
 > Background color #0f0b15
