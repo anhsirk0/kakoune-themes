@@ -12,9 +12,9 @@ push @all_themes, @default_themes;
 if (scalar @ARGV > 0) {
     ($theme) = grep /$ARGV[0]/, @all_themes;
     if ($theme) {
-	print "\'$theme\' theme selected\n";
+        print "\'$theme\' theme selected\n";
     } else {
-	print "No theme found for \'$ARGV[0]\'\n"; 
+        print "No theme found for \'$ARGV[0]\'\n"; 
     }
 }
 
@@ -26,16 +26,20 @@ unless($theme) {
 
 if ($theme) {
     $theme =~ s/.kak$//;
+    # read config
     open(FH, '<' . $config) or die "Unable to open\n";
     while(<FH>) {
-	if ($_ =~ /^colorscheme/) {
-	    $config_content .= "colorscheme $theme\n";
-	    next;
-	}
-	$config_content .= $_;
+        if ($_ =~ /^colorscheme/) {
+            $config_content .= "colorscheme $theme\n";
+            next;
+        }
+        $config_content .= $_;
     }
+    close(FH);
+    # write config
     open(FH, '>' . $config) or die "Unable to open\n";
     print FH $config_content;
+    close(FH);
 } else {
     print "No theme selected\n";
 }
