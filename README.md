@@ -15,68 +15,68 @@ Ef-themes pictures: https://protesilaos.com/emacs/ef-themes-pictures
 Modus-themes pictures: https://protesilaos.com/emacs/modus-themes-pictures  
 
 
-![vivendi color scheme ](https://codeberg.org/anhsirk0/kakoune-themes/src/branch/master/screenshots/vivendi.png)
+![vivendi color scheme ](https://codeberg.org/anhsirk0/kakoune-themes/raw/branch/master/screenshots/vivendi.png)
 > Background color #000000
 
 ## Modus operandi color scheme
-![operandi color scheme ](https://codeberg.org/anhsirk0/kakoune-themes/src/branch/master/screenshots/operandi.png)
+![operandi color scheme ](https://codeberg.org/anhsirk0/kakoune-themes/raw/branch/master/screenshots/operandi.png)
 > Background color #ffffff
 
 ## Ef-autumn color scheme
-![ef-autumn color scheme ](https://codeberg.org/anhsirk0/kakoune-themes/src/branch/master/screenshots/ef-autumn.png)
+![ef-autumn color scheme ](https://codeberg.org/anhsirk0/kakoune-themes/raw/branch/master/screenshots/ef-autumn.png)
 > Background color #0f0e06
 
 ## Ef-winter color scheme
-![ef-winter color scheme ](https://codeberg.org/anhsirk0/kakoune-themes/src/branch/master/screenshots/ef-winter.png)
+![ef-winter color scheme ](https://codeberg.org/anhsirk0/kakoune-themes/raw/branch/master/screenshots/ef-winter.png)
 > Background color #0f0b15
 
 ## Kanagawa color scheme
-![kanagawa color scheme ](https://codeberg.org/anhsirk0/kakoune-themes/src/branch/master/screenshots/kanagawa.png)
+![kanagawa color scheme ](https://codeberg.org/anhsirk0/kakoune-themes/raw/branch/master/screenshots/kanagawa.png)
 > Background color #1F1F28
 
 ## Ayu-mirage color scheme
-![ayu_mirage color scheme ](https://codeberg.org/anhsirk0/kakoune-themes/src/branch/master/screenshots/ayu_mirage.png)
+![ayu_mirage color scheme ](https://codeberg.org/anhsirk0/kakoune-themes/raw/branch/master/screenshots/ayu_mirage.png)
 > Background color #1F2430
 
 ## Ayu-dark color scheme
-![ayu_dark color scheme ](https://codeberg.org/anhsirk0/kakoune-themes/src/branch/master/screenshots/ayu_dark.png)
+![ayu_dark color scheme ](https://codeberg.org/anhsirk0/kakoune-themes/raw/branch/master/screenshots/ayu_dark.png)
 > Background color #0A0E14
 
 ## Pastel color scheme
-![Pastel color scheme ](https://codeberg.org/anhsirk0/kakoune-themes/src/branch/master/screenshots/pastel.png)
+![Pastel color scheme ](https://codeberg.org/anhsirk0/kakoune-themes/raw/branch/master/screenshots/pastel.png)
 > Background color #2B2E33
 
 ## Warm color scheme
-![Warm color scheme ](https://codeberg.org/anhsirk0/kakoune-themes/src/branch/master/screenshots/warm.png)
+![Warm color scheme ](https://codeberg.org/anhsirk0/kakoune-themes/raw/branch/master/screenshots/warm.png)
 > Background color #222120
 
 ## Cherry color scheme
-![Cherry color scheme ](https://codeberg.org/anhsirk0/kakoune-themes/src/branch/master/screenshots/cherry.png)
+![Cherry color scheme ](https://codeberg.org/anhsirk0/kakoune-themes/raw/branch/master/screenshots/cherry.png)
 > Background color #23232F
 
 ## Berry color scheme
-![Berry color scheme ](https://codeberg.org/anhsirk0/kakoune-themes/src/branch/master/screenshots/berry.png)
+![Berry color scheme ](https://codeberg.org/anhsirk0/kakoune-themes/raw/branch/master/screenshots/berry.png)
 > Background color #2C2C2C
 
 ## Cyanide color scheme
-![Cyanide color scheme ](https://codeberg.org/anhsirk0/kakoune-themes/src/branch/master/screenshots/cyanide.png)
+![Cyanide color scheme ](https://codeberg.org/anhsirk0/kakoune-themes/raw/branch/master/screenshots/cyanide.png)
 > Background color #171A1F
 
 ## Undoo color scheme
-![Undoo color scheme ](https://codeberg.org/anhsirk0/kakoune-themes/src/branch/master/screenshots/undoo.png)
+![Undoo color scheme ](https://codeberg.org/anhsirk0/kakoune-themes/raw/branch/master/screenshots/undoo.png)
 > Background color #101010
 
 ## Monokai color scheme
-![Monokai color scheme ](https://codeberg.org/anhsirk0/kakoune-themes/src/branch/master/screenshots/monokai.png)
+![Monokai color scheme ](https://codeberg.org/anhsirk0/kakoune-themes/raw/branch/master/screenshots/monokai.png)
 *monokai syntax is different than the sublime's monokai*
 > Background color #2C2C2D
 
 ## One-dark color scheme
-![One-dark color scheme ](https://codeberg.org/anhsirk0/kakoune-themes/src/branch/master/screenshots/one_dark.png)
+![One-dark color scheme ](https://codeberg.org/anhsirk0/kakoune-themes/raw/branch/master/screenshots/one_dark.png)
 > Background color #282C34
 
 ## Mygruvbox color scheme
-![Mygruvbox color scheme ](https://codeberg.org/anhsirk0/kakoune-themes/src/branch/master/screenshots/mygruvbox.png)
+![Mygruvbox color scheme ](https://codeberg.org/anhsirk0/kakoune-themes/raw/branch/master/screenshots/mygruvbox.png)
 mygruvbox is almost identical to original gruvbox {whitespace color is dimmed & few other minor changes}  
 gruvbox name was already taken so i have to resort to mygruvbox
 > Background color #282828
