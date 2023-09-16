@@ -10,6 +10,11 @@ This repo has 40 themes
 > This repo is also my personal config for kakoune  
 
 ## Modus vivendi color scheme
+
+Ef-themes pictures: https://protesilaos.com/emacs/ef-themes-pictures  
+Modus-themes pictures: https://protesilaos.com/emacs/modus-themes-pictures  
+
+
 ![vivendi color scheme ](https://github.com/anhsirk0/kakoune/blob/master/screenshots/vivendi.png)
 > Background color #000000
 
