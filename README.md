@@ -1,5 +1,12 @@
-# kakoune themes
-color schemes for kakoune (now with transparent selections)  
+# Kakoune themes
+
++ Git repo on Codeberg: <https://codeberg.org/anhsirk0/kakoune-themes>
+  - Mirrors:
+    + GitHub: <https://github.com/anhsirk0/kakoune-themes>
+
+This repo has 40 themes  
+8 from modus-themes, 24 from ef-themes and 8 more  
+
 > This repo is also my personal config for kakoune  
 
 ## Modus vivendi color scheme
