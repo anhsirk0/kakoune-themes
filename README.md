@@ -4,8 +4,8 @@
   - Mirrors:
     + GitHub: <https://github.com/anhsirk0/kakoune-themes>
 
-This repo has 40 themes  
-8 from modus-themes, 24 from ef-themes and 8 more  
+This repo has 48 themes  
+8 from modus-themes, 32 from ef-themes and 8 more  
 
 > This repo is also my personal config for kakoune  
 
