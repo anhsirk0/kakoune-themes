@@ -41,7 +41,7 @@ set-face global function 'rgb:0dafdf'
 set-face global string 'rgb:df805f'
 set-face global builtin 'rgb:5faaef'
 set-face global constant 'rgb:379cf6'
-set-face global comment 'rgb:9f8f6a'
+set-face global comment 'rgb:d08f72'
 set-face global meta 'rgb:7fafff'
 
 set-face global operator 'rgb:d0d0d0'

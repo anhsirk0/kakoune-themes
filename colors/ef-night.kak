@@ -26,7 +26,7 @@ declare-option str cursor 'rgb:00ccff'
 declare-option str bg_hl_line 'rgb:002255'
 declare-option str fg_space 'rgb:3a4a66'
 
-declare-option str psel 'rgb:222f40'
+declare-option str psel 'rgb:253146'
 declare-option str ssel 'rgb:002255'
 
 # Reference

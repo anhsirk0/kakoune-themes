@@ -26,7 +26,7 @@ declare-option str cursor 'rgb:f0af7f'
 declare-option str bg_hl_line 'rgb:1f2f3f'
 declare-option str fg_space 'rgb:4d4a4b'
 
-declare-option str psel 'rgb:2f2630'
+declare-option str psel 'rgb:3f2f40'
 declare-option str ssel 'rgb:1f2f3f'
 
 # Reference
@@ -42,7 +42,7 @@ set-face global string 'rgb:df8a5a'
 set-face global builtin 'rgb:3f95f6'
 set-face global constant 'rgb:1dbfcf'
 set-face global comment 'rgb:857f8f'
-set-face global meta 'rgb:ff7355'
+set-face global meta 'rgb:ef6360'
 
 set-face global operator 'rgb:d0d0d0'
 set-face global comma 'rgb:d0d0d0'

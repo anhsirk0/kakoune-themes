@@ -42,7 +42,7 @@ set-face global string 'rgb:af9fff'
 set-face global builtin 'rgb:3fb83f'
 set-face global constant 'rgb:37aff6'
 set-face global comment 'rgb:b7a07f'
-set-face global meta 'rgb:3fb83f'
+set-face global meta 'rgb:5dc0aa'
 
 set-face global operator 'rgb:cfdfd5'
 set-face global comma 'rgb:cfdfd5'
