@@ -139,7 +139,7 @@ set-face global ts_constant_builtin             "%opt{blue_bright}"
 set-face global ts_constant_builtin_boolean     "%opt{blue_bright}"
 set-face global ts_constant_character           "%opt{blue_bright}"
 set-face global ts_constant_macro               "%opt{red_bright}"
-set-face global ts_constant_numeric             "%opt{blue_bright}"
+set-face global ts_constant_numeric             "%opt{fg_main}"
 
 # -- Variables --
 set-face global ts_variable                     "%opt{cyan}"
@@ -151,7 +151,7 @@ set-face global ts_variable_parameter           "%opt{cyan}+i"
 set-face global ts_comment                      "%opt{fg_dim}+i"
 set-face global ts_comment_unused               "%opt{fg_dim}+is"
 set-face global ts_operator                     "%opt{fg_main}"
-set-face global ts_punctuation                  "%opt{fg_dim}"
+set-face global ts_punctuation                  "%opt{fg_main}"
 set-face global ts_punctuation_special          "%opt{purple_bright}"
 
 # -- Properties, namespaces, labels --
