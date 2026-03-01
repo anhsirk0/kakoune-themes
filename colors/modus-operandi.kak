@@ -148,8 +148,8 @@ set-face global ts_variable_other_member        "%opt{cyan_warmer}"
 set-face global ts_variable_parameter           "%opt{cyan}+i"
 
 # -- Comments & operators --
-set-face global ts_comment                      "%opt{fg_dim}+i"
-set-face global ts_comment_unused               "%opt{fg_dim}+is"
+set-face global ts_comment                      "%opt{fg_dim}"
+set-face global ts_comment_unused               "%opt{fg_dim}+s"
 set-face global ts_operator                     "%opt{fg_main}"
 set-face global ts_punctuation                  "%opt{fg_main}"
 set-face global ts_punctuation_special          "%opt{purple_bright}"

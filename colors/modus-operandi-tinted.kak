@@ -150,8 +150,8 @@ set-face global ts_variable_other_member        "%opt{green_bright}"
 set-face global ts_variable_parameter           "%opt{green_bright}+i"
 
 # -- Comments & operators --
-set-face global ts_comment                      "%opt{red_faint}+i"
-set-face global ts_comment_unused               "%opt{red_faint}+is"
+set-face global ts_comment                      "%opt{red_faint}"
+set-face global ts_comment_unused               "%opt{red_faint}+s"
 set-face global ts_operator                     "%opt{fg_main}"
 set-face global ts_punctuation                  "%opt{fg_main}"
 set-face global ts_punctuation_special          "%opt{blue}"
